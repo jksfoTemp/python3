@@ -1,3 +1,6 @@
+"Not curated, historic file dump. Should be safe for PI."
+
+
 Yuppers, python projects, some were switched from bash as the complexity
 increased
 

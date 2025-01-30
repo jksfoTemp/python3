@@ -1,0 +1,239 @@
+2024-08-04 14:54:24,083 INFO: 
+Begin: 14:54:24
+2024-08-04 14:54:25,017 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-04 14:54:27,986 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/PhysicalTherapyBalance.pdf to /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2024-08-04 14:54:27,986 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/TBReports
+2024-08-04 14:54:28,648 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/TBReports
+2024-08-04 14:54:30,544 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/TB_Results.txt to /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2024-08-04 14:54:33,551 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2024-08-04 14:54:33,551 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/HealthSummaries
+2024-08-04 14:54:34,451 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries
+2024-08-04 14:54:37,289 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2024-08-04 14:54:37,289 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays
+2024-08-04 14:54:38,033 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2024-08-04 14:54:40,478 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2024-08-04 14:54:42,630 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2024-08-04 14:54:42,630 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-04 14:54:43,349 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-04 14:54:45,705 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2024-08-04 14:54:47,956 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2024-08-04 14:54:47,956 INFO: 
+End: 14:54:47
+2024-08-04 14:56:38,525 INFO: 
+Begin: 14:56:38
+2024-08-04 14:56:39,159 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-04 14:56:39,380 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf.bak
+2024-08-04 14:56:42,322 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/PhysicalTherapyBalance.pdf to /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2024-08-04 14:56:42,322 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/TBReports
+2024-08-04 14:56:42,323 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/TBReports
+2024-08-04 14:56:42,571 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt.bak
+2024-08-04 14:56:44,786 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/TB_Results.txt to /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2024-08-04 14:56:44,787 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf.bak
+2024-08-04 14:56:47,004 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2024-08-04 14:56:47,004 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/HealthSummaries
+2024-08-04 14:56:47,004 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries
+2024-08-04 14:56:47,233 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt.bak
+2024-08-04 14:56:49,910 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2024-08-04 14:56:49,911 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays
+2024-08-04 14:56:49,911 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2024-08-04 14:56:50,115 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png.bak
+2024-08-04 14:56:52,777 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2024-08-04 14:56:52,778 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png.bak
+2024-08-04 14:56:55,562 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2024-08-04 14:56:55,562 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-04 14:56:55,562 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-04 14:56:55,746 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png.bak
+2024-08-04 14:56:58,334 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2024-08-04 14:56:58,337 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png.bak
+2024-08-04 14:57:00,717 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2024-08-04 14:57:00,718 INFO: 
+End: 14:57:00
+
+2024-08-04 14:57:03,844 INFO: 
+Begin: 14:57:03
+2024-08-04 14:57:03,844 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-04 14:57:03,845 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf.bak
+2024-08-04 14:57:06,340 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/PhysicalTherapyBalance.pdf to /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2024-08-04 14:57:06,340 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/TBReports
+2024-08-04 14:57:06,340 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/TBReports
+2024-08-04 14:57:06,510 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt.bak
+2024-08-04 14:57:08,183 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/TB_Results.txt to /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2024-08-04 14:57:08,183 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf.bak
+2024-08-04 14:57:09,790 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2024-08-04 14:57:09,790 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/HealthSummaries
+2024-08-04 14:57:09,790 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries
+2024-08-04 14:57:10,000 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt.bak
+2024-08-04 14:57:12,614 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2024-08-04 14:57:12,615 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays
+2024-08-04 14:57:12,615 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2024-08-04 14:57:12,615 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png.bak
+2024-08-04 14:57:15,100 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2024-08-04 14:57:15,101 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png.bak
+2024-08-04 14:57:17,603 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2024-08-04 14:57:17,604 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-04 14:57:17,604 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-04 14:57:17,604 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png.bak
+2024-08-04 14:57:20,120 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2024-08-04 14:57:20,120 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png.bak
+2024-08-04 14:57:22,476 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2024-08-04 14:57:22,476 INFO: 
+End: 14:57:22
+
+2024-08-04 14:59:00,876 INFO: 
+Begin: 14:59:00
+2024-08-04 14:59:00,876 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-04 14:59:01,084 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf.bak
+2024-08-04 14:59:03,338 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/PhysicalTherapyBalance.pdf to /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2024-08-04 14:59:03,338 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/TBReports
+2024-08-04 14:59:03,339 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/TBReports
+2024-08-04 14:59:03,506 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt.bak
+2024-08-04 14:59:05,091 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/TB_Results.txt to /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2024-08-04 14:59:05,091 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf.bak
+2024-08-04 14:59:06,783 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2024-08-04 14:59:06,783 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/HealthSummaries
+2024-08-04 14:59:06,784 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries
+2024-08-04 14:59:06,941 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt.bak
+2024-08-04 14:59:08,999 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2024-08-04 14:59:09,000 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays
+2024-08-04 14:59:09,000 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2024-08-04 14:59:09,187 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png.bak
+2024-08-04 14:59:11,656 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2024-08-04 14:59:11,656 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png.bak
+2024-08-04 14:59:13,988 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2024-08-04 14:59:13,988 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-04 14:59:13,989 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-04 14:59:14,202 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png.bak
+2024-08-04 14:59:16,345 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2024-08-04 14:59:16,346 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png.bak
+2024-08-04 14:59:18,552 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2024-08-04 14:59:18,552 INFO: 
+End: 14:59:18
+
+2024-08-04 15:03:11,367 INFO: 
+Begin: 15:03:11
+2024-08-04 15:03:11,562 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-04 15:03:11,563 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf.bak
+2024-08-04 15:03:13,570 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/PhysicalTherapyBalance.pdf to /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2024-08-04 15:03:13,571 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/TBReports
+2024-08-04 15:03:13,571 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/TBReports
+2024-08-04 15:03:13,572 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt.bak
+2024-08-04 15:03:15,352 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/TB_Results.txt to /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2024-08-04 15:03:15,352 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf.bak
+2024-08-04 15:03:17,117 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2024-08-04 15:03:17,118 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/HealthSummaries
+2024-08-04 15:03:17,118 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries
+2024-08-04 15:03:17,118 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt.bak
+2024-08-04 15:03:19,825 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2024-08-04 15:03:19,825 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays
+2024-08-04 15:03:19,826 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2024-08-04 15:03:19,826 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png.bak
+2024-08-04 15:03:22,023 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2024-08-04 15:03:22,024 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png.bak
+2024-08-04 15:03:24,869 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2024-08-04 15:03:24,869 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-04 15:03:24,869 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-04 15:03:25,178 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png.bak
+2024-08-04 15:03:27,452 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2024-08-04 15:03:27,452 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png.bak
+2024-08-04 15:03:29,915 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2024-08-04 15:03:29,916 INFO: 
+End: 15:03:29
+
+2024-08-04 15:10:18,691 INFO: 
+Begin: 15:10:18
+2024-08-04 15:10:18,981 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-04 15:10:19,699 ERROR: Error copying files: [Errno 5] Input/output error
+2024-08-04 15:10:19,699 INFO: 
+End: 15:10:19
+
+2024-08-04 15:11:05,020 INFO: 
+Begin: 15:11:05
+2024-08-04 15:11:05,020 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-04 15:11:05,021 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf.bak
+2024-08-04 15:11:05,495 ERROR: Error copying files: [Errno 5] Input/output error
+2024-08-04 15:11:05,496 INFO: 
+End: 15:11:05
+
+2024-08-04 15:25:24,682 INFO: 
+Begin: 15:25:24
+2024-08-04 15:25:24,685 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-04 15:34:19,810 INFO: 
+Begin: 15:34:19
+2024-08-04 15:34:20,047 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-04 15:36:33,844 INFO: 
+Begin: 15:36:33
+2024-08-04 15:36:33,845 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-10 22:56:37,653 INFO: 
+Begin: 22:56:37
+2024-08-10 22:56:37,658 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-10 22:56:37,661 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/PhysicalTherapyBalance.pdf to /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2024-08-10 22:56:37,661 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/TBReports
+2024-08-10 22:56:37,662 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/TBReports
+2024-08-10 22:56:37,663 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/TB_Results.txt to /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2024-08-10 22:56:37,664 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2024-08-10 22:56:37,665 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/HealthSummaries
+2024-08-10 22:56:37,665 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries
+2024-08-10 22:56:37,668 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2024-08-10 22:56:37,668 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays
+2024-08-10 22:56:37,669 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2024-08-10 22:56:37,671 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2024-08-10 22:56:37,673 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2024-08-10 22:56:37,673 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-10 22:56:37,674 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-10 22:56:37,676 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2024-08-10 22:56:37,679 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2024-08-10 22:56:37,680 INFO: 
+End: 22:56:37
+
+2024-08-10 22:57:32,378 INFO: 
+Begin: 22:57:32
+2024-08-10 22:57:32,378 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-10 22:57:32,379 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf.bak
+2024-08-10 22:57:32,379 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/PhysicalTherapyBalance.pdf to /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2024-08-10 22:57:32,379 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/TBReports
+2024-08-10 22:57:32,379 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/TBReports
+2024-08-10 22:57:32,380 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt.bak
+2024-08-10 22:57:32,380 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/TB_Results.txt to /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2024-08-10 22:57:32,380 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf.bak
+2024-08-10 22:57:32,380 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2024-08-10 22:57:32,380 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/HealthSummaries
+2024-08-10 22:57:32,381 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries
+2024-08-10 22:57:32,381 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt.bak
+2024-08-10 22:57:32,381 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2024-08-10 22:57:32,381 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays
+2024-08-10 22:57:32,381 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2024-08-10 22:57:32,382 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png.bak
+2024-08-10 22:57:32,382 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2024-08-10 22:57:32,382 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png.bak
+2024-08-10 22:57:32,382 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2024-08-10 22:57:32,382 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-10 22:57:32,383 INFO: Dir exists: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-10 22:57:32,383 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png.bak
+2024-08-10 22:57:32,383 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2024-08-10 22:57:32,384 INFO: File exists, creating backup: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png.bak
+2024-08-10 22:57:32,384 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2024-08-10 22:57:32,384 INFO: 
+End: 22:57:32
+
+2024-08-13 22:53:40,807 INFO: 
+Begin: 22:53:40
+2024-08-13 22:53:41,820 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/
+2024-08-13 22:53:44,349 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/PhysicalTherapyBalance.pdf to /home/jku/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2024-08-13 22:53:44,350 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/TBReports
+2024-08-13 22:53:45,101 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/TBReports
+2024-08-13 22:53:47,490 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/TB_Results.txt to /home/jku/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2024-08-13 22:53:49,580 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jku/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2024-08-13 22:53:49,580 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/HealthSummaries
+2024-08-13 22:53:50,522 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries
+2024-08-13 22:53:53,528 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jku/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2024-08-13 22:53:53,529 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays
+2024-08-13 22:53:54,453 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2024-08-13 22:53:57,833 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2024-08-13 22:54:00,293 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/Description.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2024-08-13 22:54:00,293 INFO: Recursion: /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-13 22:54:01,112 INFO: Dir created: /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2024-08-13 22:54:03,781 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2024-08-13 22:54:06,160 INFO: Copied /home/jku/MyHome/Pers/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jku/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2024-08-13 22:54:06,160 INFO: 
+End: 22:54:06
+

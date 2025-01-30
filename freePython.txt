@@ -1,0 +1,9 @@
+https://www.hostingadvice.com/how-to/best-free-python-hosting-servers/
+
+https://medium.com/@alisdair_/5-top-free-hosting-platforms-for-python-apps-2024-best-heroku-alternatives-c31c0a2837d1
+
+https://www.pythonanywhere.com/
+
+https://wiki.python.org/moin/FreeHosts  
+
+https://www.reddit.com/r/pythontips/comments/17ccwix/which_are_the_free_platforms_to_host_python_apps/?rdt=38411 

@@ -1,0 +1,48 @@
+
+#Killing season
+#Seven days in utopia
+
+##############################
+Switch to VSCode
+  bash plugin
+  disable others
+
+##############################
+PythonStub
+  python
+    List and print dir
+    grep for ??? jkr?
+    cronjobs
+  bash
+    foo.sh print 'hello' to term and wait
+    make stub cronjob exec foo.bs
+  python
+    test for cj existence
+    if not there create else next
+    import library
+    python define function and import it
+    python create local function libary and import it
+    try-catch
+    logging
+    resource file
+    get user dir from resx file
+    compose string
+    register cronjob
+
+  Now we can practice file IO and directory (re)cursion
+
+  Src(A)/Dest(B) to resource file, A wins
+
+  ? Oneway
+
+    Fetch dir structure first -> arr A/B [dirName]
+      Test A->B, create
+      Test B->A, create
+
+    Fetch files second -> arr A/B [dirName, filName, dateTime, matchOnName, matchOnDateTime, missingMatch]
+      Updates go one way, A->B
+      We've handled missing ones, now these are updates, pushing from local
+        (something has changed and we want to back it up to GDrive)
+
+
+##############################

@@ -1,0 +1,9 @@
+ls
+echo "foo"
+
+# foobar.bs
+# foobar.bs
+# foobar.sh
+# foo
+# foobar.sh: line 4: foobar.bs: command not found
+# O

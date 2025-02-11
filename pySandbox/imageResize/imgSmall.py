@@ -1,11 +1,12 @@
 '''
-Please generate python3 template code with error handling that calls a sub that prints the current time. It should have  referencec to numpy, datetime, pdf and string libraries.
+Please generate python3 template code with error handling that calls a sub that prints 
+the current time. It should have  reference to numpy, datetime, pdf and string libraries.
 '''
 
 import datetime
 import string
-import numpy as np  # Although not strictly needed for this example, included as requested
-from reportlab.pdfgen import canvas  # Although not strictly needed for this example, included as requested
+# import numpy as np  # Although not strictly needed for this example, included as requested
+# from reportlab.pdfgen import canvas  # Although not strictly needed for this example, included as requested
 
 def print_current_time():
     """Prints the current time in a formatted string."""

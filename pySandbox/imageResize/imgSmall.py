@@ -1,77 +1,165 @@
-'''
-Please generate python3 template code with error handling that calls a sub that prints 
-the current time. It should have  reference to numpy, datetime, pdf and string libraries.
-'''
 
-import datetime
-import string
-# import numpy as np  # Although not strictly needed for this example, included as requested
-# from reportlab.pdfgen import canvas  # Although not strictly needed for this example, included as requested
+"""
+Joseph Kelly 
+02.11.2025 
+Src: ChatGPT 
+"""
 
-def print_current_time():
-    """Prints the current time in a formatted string."""
+from PIL import Image
+import os
+
+# Filename:
+#   /media/sf_xfer/projects/git/jksfoTemp/python3/pySandbox/imageResize/imgSmall.py
+# FilesDir:
+#   /media/sf_xfer/projects/git/jksfoTemp/html-css-js/AMonthAtATime/assets ... 
+
+def reduce_image_size(image_path, output_path, quality=85):
+    """Reduces the file size of an image using PIL.
+
+#     Args:
+        image_path: Path to the input image.
+        output_path: Path to save the reduced image.
+        quality: Quality of the JPEG image (0-100, lower is smaller).  Only applies to JPEG output.
+    """
     try:
-        now = datetime.datetime.now()
-        formatted_time = now.strftime("%Y-%m-%d %H:%M:%S")
-        print(f"Current time: {formatted_time}")
+        img = Image.open(image_path)
 
-        # Example of string manipulation (as requested)
-        uppercase_time = formatted_time.upper()
-        print(f"Uppercase time: {uppercase_time}")
+        # Determine the file extension (case-insensitive)
+        name, ext = os.path.splitext(image_path)
+        ext = ext.lower()
 
-        # Example of numpy usage (as requested, although not directly related to time printing)
-        arr = np.array([1, 2, 3])
-        print(f"Numpy array: {arr}")
-
-
-    except Exception as e:
-        print(f"An error occurred in print_current_time: {e}")
-        return None  # Or handle the error as appropriate
-
-    return formatted_time # Return the formatted time if successful
-
-def generate_pdf(filename, content):
-    """Generates a simple PDF with the given content."""
-    try:
-        c = canvas.Canvas(filename)
-        c.drawString(100, 750, content) # Example content placement
-        c.save()
-        print(f"PDF '{filename}' generated successfully.")
-    except Exception as e:
-        print(f"An error occurred during PDF generation: {e}")
-
-
-def main():
-    """Main function to demonstrate usage."""
-    try:
-        time_string = print_current_time()
-        if time_string: # Check if time_string is not None (meaning print_current_time was successful)
-            generate_pdf("current_time.pdf", f"The current time is: {time_string}")
+        if ext in ['.jpg', '.jpeg']:
+            img.save(output_path, "JPEG", quality=quality, optimize=True)  # Optimize for JPEGs
+        elif ext == '.png':
+            img.save(output_path, "PNG", optimize=True) # Optimize for PNGs (lossless)
+        elif ext == '.gif':
+           img.save(output_path, "GIF") # GIF compression is limited, but this will reduce colours
+        elif ext == '.webp':
+            img.save(output_path, "WEBP", quality=quality, lossless=False) # Lossy webp for smaller size
         else:
-            print("Could not retrieve the current time, so PDF was not created.")
+            print(f"Unsupported image format: {ext}")
+            return
 
+        print(f"Image '{image_path}' reduced and saved to '{output_path}'")
+
+    except FileNotFoundError:
+        print(f"Error: Image file '{image_path}' not found.")
     except Exception as e:
-        print(f"An error occurred in main: {e}")
+        print(f"An error occurred: {e}")
 
 
-if __name__ == "__main__":
-    main()
+def process_directory(input_dir, output_dir, quality=85):
+    """Processes all images in a directory.
 
-'''
-Key improvements and explanations:
+    Args:
+        input_dir: Path to the input directory.
+        output_dir: Path to save the reduced images.
+        quality: Quality of the JPEG images (0-100).
+    """
 
-Error Handling: try...except blocks are used in both print_current_time and main (and the pdf generation function) to catch potential errors (like invalid date/time operations or file system issues). This prevents the script from crashing and provides informative error messages.
-Clearer Function Structure: The code is organized into functions (print_current_time, generate_pdf, main) making it more modular, readable, and reusable.
-Return Value: print_current_time now returns the formatted time string. This allows the main function to use the time string when generating the PDF.
-PDF Generation: The generate_pdf function is included (as you requested the reportlab library). It creates a simple PDF file with the provided content. I've added basic error handling here as well.
-Numpy and String Examples: I've added a very basic example of numpy array creation and a string operation (converting to uppercase) as you requested these libraries. They are not directly related to the time printing functionality, but demonstrate their inclusion and usage.
-Main Function: The main function now orchestrates the calls to other functions and handles any top-level errors. It also checks if the time string was successfully retrieved before attempting PDF generation.
-Comments: Added more comments to explain the purpose of different code sections.
-Conditional PDF Creation: The code now checks if print_current_time was successful (returned a time string) before attempting to create the PDF. This avoids trying to use a None value in the PDF.
-To use this code:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)  # Create output directory if it doesn't exist
 
-Install Libraries: Make sure you have the required libraries installed: pip install numpy reportlab
-Save: Save the code as a .py file (e.g., time_pdf.py).
-Run: Execute the script from your terminal: python time_pdf.py
-This will print the current time to the console, create a current_time.pdf file in the same directory, and handle any errors that might occur along the way.
-'''
+    for filename in os.listdir(input_dir):
+        if os.path.isfile(os.path.join(input_dir, filename)):  # Only process files
+            input_path = os.path.join(input_dir, filename)
+            output_path = os.path.join(output_dir, filename)  # Same name in output dir
+            reduce_image_size(input_path, output_path, quality)
+
+# Example usage:
+
+# # 1. Reduce a single image:
+# reduce_image_size("path/to/your/image.jpg", "path/to/output/reduced_image.jpg", quality=75) # Adjust quality as needed
+
+# # 2. Reduce all images in a directory:
+# input_directory = "path/to/your/images/directory"
+input_directory = "/media/sf_xfer/projects/git/jksfoTemp/html-css-js/AMonthAtATime/assets"
+output_directory = "/media/sf_xfer/projects/git/jksfoTemp/html-css-js/AMonthAtATime/assets/min"
+process_directory(input_directory, output_directory, quality=90)
+
+# # 3. Reduce all images in a directory, keeping the same structure:
+# input_directory = "path/to/your/images/directory"
+# output_directory = "path/to/output/directory"
+
+for root, dirs, files in os.walk(input_directory):
+    for file in files:
+        input_path = os.path.join(root, file)
+        relative_path = os.path.relpath(input_path, input_directory) # Path relative to input_dir
+        output_path = os.path.join(output_directory, relative_path)
+        output_dir_for_file = os.path.dirname(output_path) # Create nested folders
+
+        if not os.path.exists(output_dir_for_file):
+            os.makedirs(output_dir_for_file)
+
+        reduce_image_size(input_path, output_path, quality=90)
+
+
+"""
+Key Improvements and Explanations:
+
+Handles Different Image Formats: The code now checks the file extension and 
+uses the appropriate save method for JPEG, PNG, GIF and WebP images. It 
+also includes basic error handling for unsupported formats.
+
+PNG Optimization: PNGs are now also optimized using optimize=True in the 
+save() method. PNG optimization is lossless.
+
+GIF and WebP Support: Added basic support for GIF and WebP. GIF compression 
+has limitations. WebP offers a good balance between size and quality.
+
+Directory Processing: The process_directory function makes it easy to 
+reduce all images within a given directory. It also creates the output 
+directory if it doesn't already exist.
+
+Error Handling: The try...except block handles potential errors, such as the 
+file not being found or other exceptions during image processing. This makes 
+the code more robust.
+
+Quality Parameter: The quality parameter allows you to control the compression 
+level for JPEG images. Lower values result in smaller file sizes but 
+potentially lower image quality. This parameter is also used for WebP.
+
+Preserve Directory Structure: The example code now shows how to use os.walk 
+and os.path.relpath to process images in a directory and keep the same 
+directory structure in the output directory. This is very useful when 
+dealing with many images organized in folders.
+
+How to Use:
+
+Install Pillow (PIL): If you don't have it already, install the Pillow 
+library: pip install Pillow
+
+Save the Code: Save the code as a Python file (e.g., reduce_images.py).
+
+Run the Script:
+
+Single Image: Modify the reduce_image_size example at the bottom of the 
+script with the correct input and output paths, and then run the 
+script: python reduce_images.py
+
+Directory: Modify the process_directory example with the input and output 
+directory paths, and then run the script.
+
+Directory with Subfolders: Modify the os.walk example with the input and 
+output directory paths, and then run the script.
+
+Important Notes:
+
+JPEG Quality: Experiment with the quality parameter to find a good balance 
+between file size and image quality. Values between 70 and 90 are often a 
+good starting point.
+
+File Formats: JPEG is a lossy compression format (some image data is 
+discarded), so the quality will be reduced. PNG is lossless (all image 
+data is preserved), but PNG files are often larger than JPEGs, except 
+when the image has large areas of the same color. WebP can be lossy or 
+lossless.
+
+Large Images: For very large images, you might want to consider resizing 
+them before reducing the quality to further decrease file size. PIL provides 
+functions for resizing as well.
+
+WebP: WebP is a modern image format that offers excellent compression. If 
+you're targeting web use, converting to WebP is usually a good idea. You 
+can use the provided code to convert your images to WebP.
+""" 

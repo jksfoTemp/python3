@@ -56,8 +56,9 @@ def extract_data_from_html (html_content, outToTerm):
 
     # A'
     
-    link = soup.find('a')['href']
+    link = soup.find('a')['href'] if soup.find('href', class_='colorTitle') else 'N/A'
 
+    job_title = soup.find('span', class_='colorTitle').get_text(strip=True) if soup.find('span', class_='colorTitle') else 'N/A'
     company_name = soup.find('span', class_='colorCompany').get_text(strip=True) if soup.find('span', class_='colorCompany') else 'N/A'
     location = soup.find('span', class_='colorLocation').get_text(strip=True) if soup.find('span', class_='colorLocation') else 'N/A'
     salary = soup.find('div', class_='colorSalary').get_text(strip=True) if soup.find('div', class_='colorSalary') else 'N/A'

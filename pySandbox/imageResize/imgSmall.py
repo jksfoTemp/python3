@@ -14,57 +14,56 @@ import os
 #   /media/sf_xfer/projects/git/jksfoTemp/html-css-js/AMonthAtATime/assets ... 
 
 def reduce_image_size(image_path, output_path, quality=85):
-    """Reduces the file size of an image using PIL.
+  """Reduces the file size of an image using PIL.
 
-#     Args:
-        image_path: Path to the input image.
-        output_path: Path to save the reduced image.
-        quality: Quality of the JPEG image (0-100, lower is smaller).  Only applies to JPEG output.
-    """
-    try:
-        img = Image.open(image_path)
+#   Args:
+    image_path: Path to the input image.
+    output_path: Path to save the reduced image.
+    quality: Quality of the JPEG image (0-100, lower is smaller).  Only applies to JPEG output.
+  """
+  try:
+    img = Image.open(image_path)
 
-        # Determine the file extension (case-insensitive)
-        name, ext = os.path.splitext(image_path)
-        ext = ext.lower()
+    # Determine the file extension (case-insensitive)
+    name, ext = os.path.splitext(image_path)
+    ext = ext.lower()
 
-        if ext in ['.jpg', '.jpeg']:
-            img.save(output_path, "JPEG", quality=quality, optimize=True)  # Optimize for JPEGs
-        elif ext == '.png':
-            img.save(output_path, "PNG", optimize=True) # Optimize for PNGs (lossless)
-        elif ext == '.gif':
-           img.save(output_path, "GIF") # GIF compression is limited, but this will reduce colours
-        elif ext == '.webp':
-            img.save(output_path, "WEBP", quality=quality, lossless=False) # Lossy webp for smaller size
-        else:
-            print(f"Unsupported image format: {ext}")
-            return
+    if ext in ['.jpg', '.jpeg']:
+      img.save(output_path, "JPEG", quality=quality, optimize=True)  # Optimize for JPEGs
+    elif ext == '.png':
+      img.save(output_path, "PNG", optimize=True) # Optimize for PNGs (lossless)
+    elif ext == '.gif':
+       img.save(output_path, "GIF") # GIF compression is limited, but this will reduce colours
+    elif ext == '.webp':
+      img.save(output_path, "WEBP", quality=quality, lossless=False) # Lossy webp for smaller size
+    else:
+      print(f"Unsupported image format: {ext}")
+      return
 
-        print(f"Image '{image_path}' reduced and saved to '{output_path}'")
+    print(f"Image '{image_path}' reduced and saved to '{output_path}'")
 
-    except FileNotFoundError:
-        print(f"Error: Image file '{image_path}' not found.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
-
+  except FileNotFoundError:
+    print(f"Error: Image file '{image_path}' not found.")
+  except Exception as e:
+    print(f"An error occurred: {e}")
 
 def process_directory(input_dir, output_dir, quality=85):
-    """Processes all images in a directory.
+  """Processes all images in a directory.
 
-    Args:
-        input_dir: Path to the input directory.
-        output_dir: Path to save the reduced images.
-        quality: Quality of the JPEG images (0-100).
-    """
+  Args:
+    input_dir: Path to the input directory.
+    output_dir: Path to save the reduced images.
+    quality: Quality of the JPEG images (0-100).
+  """
 
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)  # Create output directory if it doesn't exist
+  if not os.path.exists(output_dir):
+    os.makedirs(output_dir)  # Create output directory if it doesn't exist
 
-    for filename in os.listdir(input_dir):
-        if os.path.isfile(os.path.join(input_dir, filename)):  # Only process files
-            input_path = os.path.join(input_dir, filename)
-            output_path = os.path.join(output_dir, filename)  # Same name in output dir
-            reduce_image_size(input_path, output_path, quality)
+  for filename in os.listdir(input_dir):
+    if os.path.isfile(os.path.join(input_dir, filename)):  # Only process files
+      input_path = os.path.join(input_dir, filename)
+      output_path = os.path.join(output_dir, filename)  # Same name in output dir
+      reduce_image_size(input_path, output_path, quality)
 
 # Example usage:
 
@@ -82,16 +81,16 @@ process_directory(input_directory, output_directory, quality=90)
 # output_directory = "path/to/output/directory"
 
 for root, dirs, files in os.walk(input_directory):
-    for file in files:
-        input_path = os.path.join(root, file)
-        relative_path = os.path.relpath(input_path, input_directory) # Path relative to input_dir
-        output_path = os.path.join(output_directory, relative_path)
-        output_dir_for_file = os.path.dirname(output_path) # Create nested folders
+  for file in files:
+    input_path = os.path.join(root, file)
+    relative_path = os.path.relpath(input_path, input_directory) # Path relative to input_dir
+    output_path = os.path.join(output_directory, relative_path)
+    output_dir_for_file = os.path.dirname(output_path) # Create nested folders
 
-        if not os.path.exists(output_dir_for_file):
-            os.makedirs(output_dir_for_file)
+    if not os.path.exists(output_dir_for_file):
+      os.makedirs(output_dir_for_file)
 
-        reduce_image_size(input_path, output_path, quality=90)
+    reduce_image_size(input_path, output_path, quality=90)
 
 
 """

@@ -1,7 +1,12 @@
 
+#Title: pjfParse.py
+
 # Write to pipe delim?
 # Write to json?
 # Call with/to wget?
+# Add in sorting?
+# I could modify a version of this to parse the pdf's for input as well,
+# especially to see what elements are present in the markup
 
 Given this input file (DataEntrySF.K.102.html), please generate a pipe separated output file, with a
 carriage return for each 'h3' element, that has the values for the following

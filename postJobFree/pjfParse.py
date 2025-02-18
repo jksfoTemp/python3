@@ -55,9 +55,8 @@ def extract_data_from_html (html_content, outToTerm):
     soup = BeautifulSoup(html_content, 'html.parser')
 
     # A'
-    
+    # what's going to happen when there are multiple matches? 
     link = soup.find('a')['href'] if soup.find('href', class_='colorTitle') else 'N/A'
-
     job_title = soup.find('span', class_='colorTitle').get_text(strip=True) if soup.find('span', class_='colorTitle') else 'N/A'
     company_name = soup.find('span', class_='colorCompany').get_text(strip=True) if soup.find('span', class_='colorCompany') else 'N/A'
     location = soup.find('span', class_='colorLocation').get_text(strip=True) if soup.find('span', class_='colorLocation') else 'N/A'
@@ -65,8 +64,8 @@ def extract_data_from_html (html_content, outToTerm):
     job_description = soup.find('span', class_='jdSnippet').get_text(strip=True) if soup.find('span', class_='jdSnippet') else 'N/A'
     posting_date = soup.find('span', class_='colorDate').get_text(strip=True) if soup.find('span', class_='colorDate') else 'N/A'
 
-    print(f"Job Title: {job_title}")
     print(f"Job link: {link}")
+    print(f"Job Title: {job_title}")
     print(f"company_name: {company_name}")
     print(f"location: {location}")
     print(f"salary: {salary}")

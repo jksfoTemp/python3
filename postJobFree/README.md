@@ -28,6 +28,9 @@ html = '''
 </div>
 '''
 
+Given python and the use of beautiful soup, I am identifying this class element by it's name, how do I extract the hyperlink?
+<h3 class="itemTitle"><a href="https://www.postjobfree.com/job/v1hyua/data-entry-clerk-san-francisco-ca" rel="nofollow">Data Entry Clerk</a></h3>
+
 import sys
 print ('argument list', sys.argv)
 name = sys.argv[1]
@@ -39,6 +42,7 @@ jksfoTemp$
 
 python3 ./python3/postJobFreeParse/pjfParse.py "/home/jku/git/jksfoTemp/python3/postJobFreeParse" "pjfParse.py" False
 python3 ./python3/postJobFreeParse/pjfParse.py "A" "B" False
+python3 /home/jku/git/jksfoTemp/python3/postJobFree/pjfParse.py  "A" "B" False
 
 
 

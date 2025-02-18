@@ -16,7 +16,7 @@ TODO: Add parsing code to extract the job description from the job posting.
 #TODO: sorting? 
 #TODO: store in a database 
 #TODO: someting else ... 
-
+ 
 import datetime
 import string
 import sys
@@ -54,8 +54,7 @@ def extract_data_from_html (html_content, outToTerm):
      # Parse the HTML content using BeautifulSoup
     soup = BeautifulSoup(html_content, 'html.parser')
 
-    # Extract relevant data
-    job_title = soup.find('h3', class_='itemTitle').get_text(strip=True) if soup.find('h3', class_='itemTitle') else 'N/A'
+    # A'
     
     link = soup.find('a')['href']
 

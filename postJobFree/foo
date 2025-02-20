@@ -1,89 +1,20 @@
-import argparse
 
-parser = argparse.ArgumentParser(description="Example script for model")
-parser.add_argument("--arg1", default='train.jsonl', help="Location train file")
-parser.add_argument("--arg2", default='images/', help="Location of image (folder)")
-args = parser.parse_args()
+TODO: Implement variable typing
+    i.e.
+    def greet(name: str) -> str:
+    def process(data: Any) -> None:
+    name: str = "Alice"
+    age: int = 30
 
-print(args)
+TODO: Implement logging
 
+TODO: Parse with PyLance (remove other linters)
 
+TODO: Set up a decent formatter that actually works (unlike black)
 
-
-Here's a breakdown of the problems and the fixes:
-
-Problems and Solutions:
-
-Stubbed requests.get:
-  Problem: The actual HTTP request was commented out and replaced with a stub, preventing real webpage downloads.
-  Solution: Uncommented r = requests.get(urlT) and removed the Stubb class and stub instantiation.
-  Now the script makes actual HTTP requests.
-
-Incorrect Stubb class and usage:
-  Problem: Stubb class was unnecessary for the script's stated purpose and was misleading.
-  Solution: Removed the Stubb class entirely as it was only hindering the script's functionality for downloading pages.
-  Error message in getURLObj incomplete:
-
-Problem: Error messages were missing the actual status code from the response.
-  Solution: Modified the error message in getURLObj to use f-strings and include r.status_code when available.
-  Also changed the except to catch requests.exceptions.RequestException for more specific handling of
-  request-related errors and included the exception e in the error message for debugging.
-
-Incorrect command-line argument handling in main call:
-
-Problem: main(sys.argv[0:], sys.argv[1:], sys.argv[2:]) was passing lists of arguments instead of individual arguments, and slicing sys.argv incorrectly.
-  Solution: Corrected the if __name__ == "__main__": block to properly handle command-line arguments.
-  Added checks for the number of arguments (len(sys.argv)).
-  If 3 arguments (script name, URL, output file), it now correctly extracts sys.argv[1] as URL and sys.argv[2] as
-  output file.
-  If 2 arguments (script name, URL only), it uses the provided URL and the default outputFile='sampleFile.html'.
-  If incorrect number of arguments, prints usage instructions.
-  write_to_stdout argument not used:
-
-Problem: The write_to_stdout argument in main was defined but not used.
-  Solution: Removed write_to_stdout from the main function signature to simplify the script, as it was not implemented.
-  If this functionality is needed, it would require adding logic to main and writeObj to handle writing to standard
-  output.
-
-Leftover "s code?" and Stubb class:
-Problem: Irrelevant text and unnecessary class.
-  Solution: Removed "s code?" and the Stubb class.
-
-Decoding content before writing:
-Problem: r.content returns bytes. Writing bytes directly to a text file might cause encoding issues.
-  Solution: In writeObj, added .decode('utf-8') to obj.content before writing to decode the bytes content to a UTF-8 string, which is a common encoding for web pages and text files.
-
-Handling None content:
-Problem: If getURLObj fails to get content (non-200 status or exception), it could potentially pass None to writeObj, leading to an error if writeObj expects an object with a .content attribute.
-  Solution:
-  * getURLObj now returns None in case of errors.
-  writeObj now checks if obj is None at the beginning. If it is, it prints a message and returns
-  without writing, preventing errors and informing the user if no content was retrieved.
-  * main now checks if obj from getURLObj is not None before calling writeObj,
-  ensuring writeObj is only called with valid content.
-
-Improved Usage Instructions:
-Problem: The usage instructions were basic.
-  Solution: Updated the docstring and the usage instructions printed when arguments are
-  incorrect to be more clear, including examples of how to run the script with both URL
-  and output file, or just URL. Now the script should correctly download webpages and
-  save them to files, handle basic errors, and provide better command-line argument
-  handling and usage instructions. It is still basic and lacks features like logging,
-  more specific exception handling (TODOs from original script), but it addresses the
-  immediate problems in the provided code.
-
-
-Check out PyLance; remove other linters
-
-
-implement type hints
-
-  def greet(name: str) -> str:
-  def process(data: Any) -> None:
-
-  name: str = "Alice"
-  age: int = 30
-
-
-Implement logging
+    Exception has occurred: ModuleNotFoundError
+    No module named 'requests'
+      File "/home/jku/git/jksfoTemp/python3/pySandbox/beautifulSoup/getRequest.0.py", line 18, in <module>
+        import requests
+    ModuleNotFoundError: No module named 'requests'
 

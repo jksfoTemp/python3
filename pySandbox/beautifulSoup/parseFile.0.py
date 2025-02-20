@@ -25,6 +25,9 @@ from bs4 import BeautifulSoup
   # print (r.text) 
   # if r.status_code == 200:
 	# soup: bs4.BeautifulSoup = BeautifulSoup(r.content, "html.parser")
+
+  input file: sampleFile.html
+
 '''
 
 # Swapping r (response) obj for f (file) obj 

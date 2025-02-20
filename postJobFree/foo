@@ -1,0 +1,38 @@
+import argparse
+
+parser = argparse.ArgumentParser(description="Example script for model")
+parser.add_argument("--arg1", default='train.jsonl', help="Location train file")
+parser.add_argument("--arg2", default='images/', help="Location of image (folder)")
+args = parser.parse_args()
+
+print(args)
+
+
+Case Number
+1448836
+Date
+Friday 03/07/2025
+Time
+2:00 pm
+Location
+1235 MISSION ST SAN FRANCISCO, CA 94103-2705https://www.instagram.com/reel/DGL5ZdXy2u4/
+Caseworker
+38LS0EFK09
+
+
+Thought you might enjoy these ...
+
+This one is of a drone show by the Oakland-Bay Bridge All-star weekend (Basketball) - all of the lights in the design are from drones that are programmed to move in formation:
+
+  https://www.instagram.com/reel/DGBSZOOueqx/?igsh=NTc4MTIwNjQ2YQ%3D%3D
+
+It was about half a mile a way. No, I did not get to see it in person but still really impressive.
+
+
+This one was for Chinese New Year celebration (lasts a month, just finished), the Salesforce Tower and the TransAmerica put on displays in synchronicity:
+
+  https://www.instagram.com/reel/DGL5ZdXy2u4/
+
+About a mile and a quarter mile away; did not see it - sometimes one forgets to look up!
+
+

@@ -19,6 +19,7 @@ TODO: Add parsing code to extract the job description from the job posting.
 #TODO: some change to test git 
 # why does 'source control' show no files? 
 # still 
+#TODO: Fix link and title error 
  
 import datetime
 import string
@@ -59,7 +60,9 @@ def extract_data_from_html (html_content, outToTerm):
 
     # A'
     # what's going to happen when there are multiple matches? 
+    # Error: N/A 
     link = soup.find('a')['href'] if soup.find('href', class_='colorTitle') else 'N/A'
+    # Error: N/A 
     job_title = soup.find('span', class_='colorTitle').get_text(strip=True) if soup.find('span', class_='colorTitle') else 'N/A'
     company_name = soup.find('span', class_='colorCompany').get_text(strip=True) if soup.find('span', class_='colorCompany') else 'N/A'
     location = soup.find('span', class_='colorLocation').get_text(strip=True) if soup.find('span', class_='colorLocation') else 'N/A'
@@ -90,8 +93,6 @@ def extract_data_from_html (html_content, outToTerm):
     print(f"An error occurred in extract_data_from_html: {e}")
     return None # Or handle the error as appropriate
     
-  
-  
 ''' Creating a PDF example 
 # Might want this for the sake of the demo code 
 # def generate_pdf(filename, content):

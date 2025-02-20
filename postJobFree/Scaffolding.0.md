@@ -1,4 +1,9 @@
-  # Parse the HTML content using BeautifulSoup
+
+
+# python3 pjfParse.py "/home/jku/git/jksfoTemp/python3/postJobFreeParse"
+# python3 pjfParse.py "/home/jku/git/jksfoTemp/python3/postJobFreeParse", "pjfParse.py", False
+
+# Parse the HTML content using BeautifulSoup
     soup = BeautifulSoup(html_content, 'html.parser')
 
     # Extract relevant data
@@ -17,7 +22,7 @@
         'job_description': job_description,
         'posting_date': posting_date
     }
-
+""
 
 
 

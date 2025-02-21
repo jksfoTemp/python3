@@ -1,13 +1,4 @@
 
-TODO: Implement variable typing
-    i.e.
-    def greet(name: str) -> str:
-    def process(data: Any) -> None:
-    name: str = "Alice"
-    age: int = 30
-
-TODO: Implement logging
-
 TODO: Parse with PyLance (remove other linters)
 
 TODO: Set up a decent formatter that actually works (unlike black)
@@ -17,4 +8,24 @@ TODO: Set up a decent formatter that actually works (unlike black)
       File "/home/jku/git/jksfoTemp/python3/pySandbox/beautifulSoup/getRequest.0.py", line 18, in <module>
         import requests
     ModuleNotFoundError: No module named 'requests'
+
+
+
+
+TODO: Implement variable typing
+    i.e.
+    i.e.
+    i.e.
+    def greet(name: str) -> str:
+    def greet(name: str) -> str:
+    i.e.
+    i.e.
+    def process(data: Any) -> None:
+    name: str = "Alice"
+    age: int = 30
+
+TODO: Implement logging
+
+TODO: Setup debugging
+
 

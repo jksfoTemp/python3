@@ -14,6 +14,10 @@ getRequest.0.py 'foo.com' 'foo.txt'
     # outputFile = 'sampleFile.html'
 Output file: sampleFile.html
 
+TODO: Get it to run again and then clean it up 
+
+# https://www.postjobfree.com/jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100 
+
 TODO: DONE Rearrange the code to be more modular and use regions 
 TODO: DONE Set up a decent formatter that actually works (unlike black)
 TODO: Implement logging
@@ -25,40 +29,39 @@ TODO: I could change this to something like 'messaging' with an array of message
   failure code and an exit code to handle the error messaging and exit in one place
 TODO: Check that comments are correct
 TODO: Avoid returning 'None' from a function - see notes and generally check for nulls 
-Check for other TODOs 
-
 
 Notes:
-* Use vscode, not vscodium  (vscodium doesn't have the same features)
 * Use # %% to run a cell in vscode
 * Consider (using/transforming) this to be a library for other projects
 """
 # endregion Description
 
-
-# region Imports
-# from subprocess import STDOUT
-# pip install --ignore-installed requests # To avoid the error: requests 2.25.1 has 
-# #requirement urllib3<1.27,>=1.21.1, but you'll have urllib3 1.26.6 which is incompatible.
-
 import requests
 import os
 import sys
 import logging
-from xmlrpc.client import Boolean
+# from xmlrpc.client import Boolean
 from urllib.parse import urlparse
-from requests.compat import (urlparse as requests_urlparse)
+from requests.compat import urlparse as requests_urlparse
 from typing import NoReturn  # , ReadOnly
 
 # endregion Imports
 
+"""_summary_
+
+    Raises:
+        Exception: _description_
+
+    Returns:
+        _type_: _description_
+"""
 
 # region Variables
 VERBOSE: bool = True  # Global verbose flag for logging
 STDOUT: bool = True  # Global flag for screen output
-FILENAME: str = "set in init function"
-URL: str = "set in init function"
-OUPUTFILE: str = "set in init function"
+FILENAME: str = "FILENAME - set in init function"
+URL: str = "URL - set in init function"
+OUPUTFILE: str = "OUPUTFILE - set in init function"
 
 # todo: set up a global log file WITH FILENAME ARG, FIRST VALUE
 LOG_FILE: str = "app.log"  # Global log file name for logging output
@@ -76,18 +79,7 @@ LOG_DATE_FORMAT: str = (
 
 # region Logging
 # logging.basicConfig(level=logging.DEBUG)
-# logging.basicConfig(level=logging.INFO)
-# logging.basicConfig(level=logging.ERROR)
-# logging.basicConfig(level=logging.CRITICAL)
-# logging.basicConfig(level=logging.NOTSET)
 # logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='app.log')
-# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='app.log', filemode='w')
-# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='app.log', filemode='w')  # w = write, a = append (default)
-# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='app.log', filemode='w')  # w = write, a = append (default) # datefmt='%m/%d/%Y %I:%M:%S %p'  # 06/24/2018 12:00:00 PM  # '%Y-%m-%d %H:%M:%S'
-# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='app.log', filemode='w', datefmt='%m/%d/%Y %I:%M:%S %p')  # 06/24/2018 12:00:00 PM  # '%Y-%m-%d %H:%M:%S'
-# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='app.log', filemode='w', datefmt='%m/%d/%Y %I:%M:%S %p')  # 06/24/2018 12:00:00 PM  # '%Y-%m-%d %H:%M:%S'
-# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='app.log', filemode='w', datefmt='%m/%d/%Y %I:%M:%S %p')  # 06/24/2018 12:00:00 PM  # '%Y-%m-%d %H:%M:%S'   # '%Y-%m-%d %H:%M:%S'   # '%m/%d/%Y %I:%M:%S %p'  # 06/24/2018 12:00:00 PM  # '%Y-%m-%d %H:%M:%S'
 
 # endregion
 
@@ -102,13 +94,7 @@ def messaging(msg: str):
         # logging.debug(msg)
     )  # Debugging message
     # logging.info(msg)  # Informational message
-    # logging.warning(msg)  # Warning message
-    # logging.error(msg)  # Error message
-    # logging.critical(msg)  # Critical message
-    # logging.log(level, msg)  # Log message at level
-    # logging.exception(msg)  # Exception message
-    # logging.debug(msg)  # Debugging message
-
+    
     # It doesn't like the type of NoReturn
     # def displayInputError(_isValid: int, _url: str, _outputFile: str, _verbose: bool) -> NoReturn:
     #   def displayInputError(
@@ -123,7 +109,7 @@ def messaging(msg: str):
       failure code and an exit code to handle the error messaging and exit in one place
     """
 
-    # stucks for compilation
+    # huh stucks for compilation
     _isValid: int = 0
     _url: str = ""
     _outputFile: str = ""
@@ -151,25 +137,8 @@ def handle_error(e: Exception):
     """
     print(f"An error occurred: {e}")
     # logging.error
-    # logging.exception
     # logging.error(f"An error occurred: {e}")
-    # logging.exception(f"An error occurred: {e}")
-    # logging.error(f"An error occurred: {e}")
-    # logging.exception(f"An error occurred: {e}")
-    # logging.error(f"An error occurred: {e}")
-    # logging.exception(f"An error occurred: {e}")
-    # logging.error(f"An error occurred: {e}")  # Error message
-    # logging.exception(f"An error occurred: {e}")  # Exception message
-    # logging.error(f"An error occurred: {e}")  # Error message
-    # logging.exception(f"An error occurred: {e}")  # Exception message
-    # logging.error(f"An error occurred: {e}")  # Error message # logging.exception(f"An error occurred: {e}")  # Exception message
-    # endregion
-
-    # region Input Validation
-    """_summary_
-    main already checks for the correct number of arguments, so \
-      this is just to validate the inputs and types 
-    """
+    
     # def validateInput(_url: str, _outputFile: str, _verbose: bool) -> int:
 
 
@@ -354,7 +323,7 @@ def main():
     #         return_status = 0
     #         # dump the file name
     #         # messaging(fname) for piping to next step
-    #     else:
+    #     else: 
     #         print("Failed to retrieve content from URL.")
     #         return_status = -1
 
@@ -384,3 +353,4 @@ if __name__ == "__main__":
 
     finally:
         print("Done")
+#endregion Main 

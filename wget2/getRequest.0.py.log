@@ -1,1 +1,46 @@
-2025-03-03 03:11:49,913 Main() Started.
+2025-03-03 08:55:42,695 __name __ Started. Calling main()
+2025-03-03 08:55:42,696 Main() Started.
+2025-03-03 08:55:42,696 Main() output not specified. 10
+2025-03-03 08:55:42,696 Main() has four arguments. 11
+2025-03-03 08:55:42,697 Enter getURLObj
+2025-03-03 08:55:42,697 Enter getURLObj
+2025-03-03 08:55:42,703 Starting new HTTPS connection (1): www.postjobfree.com:443
+2025-03-03 08:55:43,966 https://www.postjobfree.com:443 "GET /jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100 HTTP/1.1" 200 23744
+2025-03-03 08:55:44,081 Got it: 200
+2025-03-03 08:55:44,081 Got it: 200
+2025-03-03 08:55:44,082 {<Response [200]>}
+2025-03-03 08:55:44,082 Error getting url: https://www.postjobfree.com/jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100  Response status code: 200
+2025-03-03 08:55:44,082 Exit getURLObj
+2025-03-03 08:55:44,083 In main ... 
+2025-03-03 08:55:46,219 Enter writeObj
+2025-03-03 08:55:46,219 Enter writeObj
+2025-03-03 08:55:46,220 Exit writeObj
+2025-03-03 08:55:46,220 Should be good. 
+ 	 URL: https://www.postjobfree.com/jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100                 
+	 File: /home/jku/git/jksfoTemp/python3/wget2/getRequest.0.py.txt                 
+	 Output: False
+2025-03-03 08:55:46,220 Main: 12<Response [200]>
+2025-03-03 08:55:46,222 Done
+2025-03-03 09:26:34,991 __name __ Started. Calling main()
+2025-03-03 09:26:34,992 Main() Started.
+2025-03-03 09:26:34,992 Main() output not specified. 10
+2025-03-03 09:26:34,992 Main() has four arguments. 11
+2025-03-03 09:26:34,992 Enter getURLObj
+2025-03-03 09:26:34,992 Enter getURLObj
+2025-03-03 09:26:34,999 Starting new HTTPS connection (1): www.postjobfree.com:443
+2025-03-03 09:26:36,299 https://www.postjobfree.com:443 "GET /jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100 HTTP/1.1" 200 23932
+2025-03-03 09:26:36,463 Got it: 200
+2025-03-03 09:26:36,464 Got it: 200
+2025-03-03 09:26:36,464 {<Response [200]>}
+2025-03-03 09:26:36,464 Error getting url: https://www.postjobfree.com/jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100  Response status code: 200
+2025-03-03 09:26:36,464 Exit getURLObj
+2025-03-03 09:26:36,464 In main ... 
+2025-03-03 09:26:46,940 Enter writeObj
+2025-03-03 09:26:46,940 Enter writeObj
+2025-03-03 09:26:46,943 Exit writeObj
+2025-03-03 09:26:46,944 Should be good. 
+ 	 URL: https://www.postjobfree.com/jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100                 
+	 File: /home/jku/git/jksfoTemp/python3/wget2/getRequest.0.py.txt                 
+	 Output: False
+2025-03-03 09:26:46,945 Main: 12<Response [200]>
+2025-03-03 09:26:46,947 Done

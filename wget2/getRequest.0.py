@@ -37,7 +37,6 @@ import os
 import sys
 import logging
 from urllib.parse import urlparse
-from typing import NoReturn  # , ReadOnly
 
 # endregion Imports
 
@@ -52,8 +51,7 @@ OUPUTFILE2: str = "OUPUTFILE2 - set in init function"
 # endregion Variables
 
 # region Log Settings 
-LOG_LEVEL: int = (logging.INFO
-)  # Global log level for logging output (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+LOG_LEVEL: int = (logging.INFO)  # Global log level for logging output (DEBUG, INFO, WARNING, ERROR, CRITICAL)
 LOG_FORMAT: str = ("%(asctime)s - %(levelname)s - %(message)s")  # Global log format for log output
 LOG_DATE_FORMAT: str = (    
     "%m/%d/%Y %I:%M:%S %p"  # Global log date format for logging output  # 06/24/2018 12:00:00 PM  # '%Y-%m-%d %H:%M:%S' # '%m/%d/%Y %I:%M:%S %p'  # 06/24/2018 12:00:00 PM  # '%Y-%m-%d %H:%M:%S'
@@ -61,54 +59,42 @@ LOG_DATE_FORMAT: str = (
 
 # endregion Log Settings 
 
-
 # region Input Validation
-    """ 
-      NOT USED 
-      # def validateInput(_url: str, _outputFile: str, _verbose: bool) -> int:
-      # 
-      # _summary_
-      #       main already checks for the correct number of arguments, so \
-      #         this is just to validate the inputs and types 
+    # def validateInput(_url: str, _outputFile: str, _verbose: bool) -> int:
+    # 
+    # _summary_
+    #       main already checks for the correct number of arguments, so \
+    #         this is just to validate the inputs and types 
 
-      #     Args:
-      #         _url (_type_): _description_
-      #         _outputFile (_type_): _description_
-      #         _verbose (_type_): _description_
-      #     """
+    #     Args:
+    #         _url (_type_): _description_
+    #         _outputFile (_type_): _description_
+    #         _verbose (_type_): _description_
+    #    
 
-      #     # Call to validate URL
-      #     # is_valid = is_valid_url(str(url) if url is not None else "")
-      #     if not _url:
-      #         # print(f"Error: URL is required.  URL: {_url}")
-      #         return 11
-      #     if not is_valid_url(str(_url)):
-      #         # print(f"Error: URL appears to be invalid.  URL: {_url}")
-      #         return 12
-      #     if not _outputFile:
-      #         # print(f"Error: Output file is required.  Output file: {_outputFile}")
-      #         return 21
-      #     if _verbose not in [True, False]:
-      #         # print(f"Error: Verbose must be True or False.  Verbose: {_verbose}")
-      #         return 31
-      #     # passed
-      #     return 0
-    """
-
+    #     # Call to validate URL
+    #     # is_valid = is_valid_url(str(url) if url is not None else "")
+    #     if not _url:
+    #         # print(f"Error: URL is required.  URL: {_url}")
+    #         return 11
+    #     if not is_valid_url(str(_url)):
+    #         # print(f"Error: URL appears to be invalid.  URL: {_url}")
+    #         return 12
+    #     if not _outputFile:
+    #         # print(f"Error: Output file is required.  Output file: {_outputFile}")
+    #         return 21
+    #     if _verbose not in [True, False]:
+    #         # print(f"Error: Verbose must be True or False.  Verbose: {_verbose}")
+    #         return 31
+    #     # passed
+    #     return 0
 # endregion Input Validation
 
 # region Business Logic
 
 def getURLObj(urlT: str) -> requests.Response:
-    # """
-    # _summary_
-    # Args:
-    #     urlT (_type_): _description_
-    # Returns:
-    #     _type_: _description_
-    # """
     logger.info("Enter getURLObj")
-
+    logging.info("Enter getURLObj")
     code: int = -1
     r: requests.Response = requests.Response()
     try:
@@ -116,17 +102,15 @@ def getURLObj(urlT: str) -> requests.Response:
         code = r.status_code
         if code == 200:
             logger.info(f"Got it: {code}")
-            logger.info(str({r}))
+            logging.info(f"Got it: {code}")
+            logging.info(str({r}))
+            logger.error(f"Error getting url: {urlT}  Response status code: {code}")
         else:
-            logger.error(
-                f"Error getting url: {urlT}  Response status code: {code}"
-            )
-    except requests.RequestException as e:
-        logger.error(
-            f"Error getting url: {urlT};  Response status code: {code}"
-        )
-    logger.info("Exit getURLObj")
-    return r  # Return the response object
+            logger.error(f"Error getting url: {urlT};  Response status code: {code}")
+    except Exception as e:
+        logger.error(f"Exception occurred: {e}")
+    logging.info("Exit getURLObj")
+    return r
 
 # endregion Business Logic
 
@@ -134,7 +118,7 @@ def getURLObj(urlT: str) -> requests.Response:
 def writeObj(obj: requests.Response, outFile: str):
 
     logger.info("Enter writeObj")
-
+    logging.info("Enter writeObj")
     try:
         """Handle writing the object to a file."""
         if obj is None:  # Handle case where no content was retrieved
@@ -149,10 +133,10 @@ def writeObj(obj: requests.Response, outFile: str):
 
     except Exception as e:
         logger.error("Error writeObj ... ")
-        logger.error(f"An error occurred writing the file: {e}")
+        logging.error("Error writeObj ... ")
+        logging.error(f"An error occurred writing the file: {e}")
     finally:
-        logger.info("Exit writeObj")
-
+        logging.info("Exit writeObj")
 # endregion File Handling
 
 # region Valid 
@@ -173,28 +157,24 @@ def is_valid_url(url_string: str) -> bool:
     Returns:
         True if the string is likely a valid URL, False otherwise.
     """
+    res: bool = False
     try:
-        # parsed_url = urlparse(url_string)
-        # for requests consistency
-        parsed_url = requests_urlparse(url_string)
-        result = all(
-        result = all(
-            [parsed_url.scheme, parsed_url.netloc]
-        )  # Check for both scheme and netloc
-    except:  # Catch potential parsing errors, consider more specific exception if needed
-        result = False
-    logger.info("Exit is_valid_url")
-    return result
-        return False
-    logger.info("Exit is_valid_url")
-    logger.info("Exit is_valid_url")
+        parsed_url = urlparse(url_string)
+        logger.info("Exit is_valid_url. 20")
 
+        res = all([parsed_url.scheme, parsed_url.netloc])  # Check for both scheme and netloc
+    except Exception as e:  # Catch potential parsing errors, consider more specific exception if needed
+        logger.error(f"Error parsing URL: {e}")
+        logger.info("Exit is_valid_url. 21")
+        res = False
+    finally: 
+        return res
 # endregion
 
 # region Main
 
 def main():
-    """
+
     # _summary_ 
     # TODO: Consider changing these to a ReadOnly class, tuple or const - singleton, this if fine
     global VERBOSE
@@ -222,13 +202,13 @@ def main():
 
         except IndexError:
             STDOUT = False
-            logger.info("Main() output not specified.")
+            logger.info("Main() output not specified. 10")
 
         try:
             VERBOSE = bool(sys.argv[3])
         except IndexError:
             VERBOSE = False
-            logger.info("Main() has four arguments.")
+            logger.info("Main() has four arguments. 11")
 
         url = "https://www.postjobfree.com/jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100"
       
@@ -246,42 +226,40 @@ def main():
                 \n\t Output: {VERBOSE}"
             )
         
-            logger.info(str(obj))
+            logger.info("Main: 12" + str(obj))
             return_status = 0
         else: 
             logger.error("Failed to retrieve content from URL.")
-            logger.info("6")
+            logger.info("Main: 13")
             return_status = -1
+
     except Exception as e:
         logger.error(f"An error occurred: {e}")
-        logger.error("An error occurred in main", exc_info=True)
+        logger.error("An error occurred in main 14", exc_info=True)
 
 # endregion Main 
 
 # region  Entry
 
 if __name__ == "__main__":
-    """_summary_
-    * verbose
-    * stdout
-    * url
-    * file
-    """
+    
+    logger = logging.getLogger(__name__)
+    logFile = sys.argv[0] + ".log" if sys.argv[0] else "foo" + ".log"
+    logging.basicConfig(filename=logFile, format="%(asctime)s %(message)s", filemode="a")
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.DEBUG)
     try:
         logFile = sys.argv[0] + ".log" if sys.argv[0] else "foo" + ".log"
-        logging.basicConfig(
-            filename=logFile, format="%(asctime)s %(message)s", filemode="a"
-        )
+        logging.basicConfig(filename=logFile, format="%(asctime)s %(message)s", filemode="a")
         logger = logging.getLogger()
         logger.setLevel(logging.DEBUG)
-        logger.info("__name __ Started. Calling main()")
+        logging.info("__name __ Started. Calling main()")
         
         main()
 
     except Exception as e:
-        logger.critical("Beyond fubar: " + str(type(e)) + " " + str(e) + " " + str(e.args))
+        logging.critical("Beyond fubar: " + str(type(e)) + " " + str(e) + " " + str(e.args))
 
     finally:
-        logger.info("Done")
-
-#endregion Entry 
+        logging.info("Done")

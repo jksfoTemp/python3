@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# region Description
+# region Notes
 """
 Only using this to download a save a sample page
 Yes, I could have used wget, but I wanted to do this in Python 
@@ -14,11 +14,12 @@ Notes:
 * Use # %% to run a jupyter cell in vscode
 * Consider (using/transforming) this to be a library for other projects
 """
-# endregion Description
+# endregion Notes
 
 # region TODO
 """
 TODO: Implement logging
+TODO: Re-implement input validation 
 TODO: Last statement is the filename (on success)
 TODO: Check for output consolidation
 TODO: Move screen output to single location
@@ -27,6 +28,17 @@ TODO: I could change this to something like 'messaging' with an array of message
   failure code and an exit code to handle the error messaging and exit in one place
 TODO: Check that comments are correct
 TODO: Avoid returning 'None' from a function - see notes and generally check for nulls 
+TODO: Test inputs 
+TODO: Check for null code paths and variable usage 
+
+  python3 getRequest.0.py
+
+  args: 
+    <filename> # default
+    _url: str 
+    _outputFile: str, 
+    _verbose: bool
+
 """
 # endregion TODO 
 
@@ -37,6 +49,7 @@ import os
 import sys
 import logging
 from urllib.parse import urlparse
+import argparse
 
 # endregion Imports
 
@@ -47,10 +60,11 @@ STDOUT: bool = True  # Global flag for screen output
 FILENAME: str = "FILENAME - set in init function"
 URL: str = "URL - set in init function"
 OUPUTFILE2: str = "OUPUTFILE2 - set in init function"
-
+LOGGER  = logging.getLogger(__name__)
 # endregion Variables
 
 # region Log Settings 
+# TODO: Set this based upon cmd arg # 4 (3) 
 LOG_LEVEL: int = (logging.INFO)  # Global log level for logging output (DEBUG, INFO, WARNING, ERROR, CRITICAL)
 LOG_FORMAT: str = ("%(asctime)s - %(levelname)s - %(message)s")  # Global log format for log output
 LOG_DATE_FORMAT: str = (    
@@ -71,7 +85,6 @@ LOG_DATE_FORMAT: str = (
     #         _outputFile (_type_): _description_
     #         _verbose (_type_): _description_
     #    
-
     #     # Call to validate URL
     #     # is_valid = is_valid_url(str(url) if url is not None else "")
     #     if not _url:
@@ -93,23 +106,19 @@ LOG_DATE_FORMAT: str = (
 # region Business Logic
 
 def getURLObj(urlT: str) -> requests.Response:
-    logger.info("Enter getURLObj")
-    logging.info("Enter getURLObj")
+    LOGGER.info("Enter getURLObj")
     code: int = -1
     r: requests.Response = requests.Response()
     try:
         r = requests.get(urlT)
         code = r.status_code
         if code == 200:
-            logger.info(f"Got it: {code}")
-            logging.info(f"Got it: {code}")
-            logging.info(str({r}))
-            logger.error(f"Error getting url: {urlT}  Response status code: {code}")
+            LOGGER.info(f"Got it: {code} " + str({r}))
         else:
-            logger.error(f"Error getting url: {urlT};  Response status code: {code}")
+            LOGGER.error(f"Error getting url: {urlT};  Response status code: {code}")
     except Exception as e:
-        logger.error(f"Exception occurred: {e}")
-    logging.info("Exit getURLObj")
+        LOGGER.error(f"Exception occurred: {e}")
+        LOGGER.info("Exit getURLObj")
     return r
 
 # endregion Business Logic
@@ -117,26 +126,18 @@ def getURLObj(urlT: str) -> requests.Response:
 # region File Handling 
 def writeObj(obj: requests.Response, outFile: str):
 
-    logger.info("Enter writeObj")
-    logging.info("Enter writeObj")
+    LOGGER.info("Enter writeObj")
     try:
-        """Handle writing the object to a file."""
         if obj is None:  # Handle case where no content was retrieved
-            # TODO: Move screen output to single location
-            logger.warning(f"No content to write to file: {obj} \n {outFile}")
+            LOGGER.error(f"No content to write to file: {obj} \n {outFile}")
             return
         with open(outFile, "wt") as f:
-            # f.write(str(obj.content)) # bad
-            f.write(
-                obj.content.decode("utf-8")
-             )  # Decode bytes to string before writing
+            f.write(obj.content.decode("utf-8"))
 
     except Exception as e:
-        logger.error("Error writeObj ... ")
-        logging.error("Error writeObj ... ")
-        logging.error(f"An error occurred writing the file: {e}")
+        LOGGER.error(f"An error occurred writing the file: {e}")
     finally:
-        logging.info("Exit writeObj")
+        LOGGER.info("Exit writeObj")
 # endregion File Handling
 
 # region Valid 
@@ -160,82 +161,75 @@ def is_valid_url(url_string: str) -> bool:
     res: bool = False
     try:
         parsed_url = urlparse(url_string)
-        logger.info("Exit is_valid_url. 20")
+        LOGGER.info("Exit is_valid_url. 20")
 
         res = all([parsed_url.scheme, parsed_url.netloc])  # Check for both scheme and netloc
     except Exception as e:  # Catch potential parsing errors, consider more specific exception if needed
-        logger.error(f"Error parsing URL: {e}")
-        logger.info("Exit is_valid_url. 21")
+        LOGGER.error(f"Error parsing URL: {e}")
+        LOGGER.info("Exit is_valid_url. 21")
         res = False
     finally: 
         return res
 # endregion
 
-# region Main
+def setLogger() -> None:
+    # Obviously I don't understand their implementation of logging ... 
+    try:
+        if len(sys.argv) > 4:
+            LOGGER.error("Main() - too many arguments")
+        elif len(sys.argv) > 3 and sys.argv[3] is not None and sys.argv[3] != "" and sys.argv[3] != "None":
+            VERBOSE = True 
+            LOGGER.levelname = "Info"
+        else:
+            VERBOSE = False 
+            LOGGER.levelname = "Error"
+    except: 
+        logMe("effed up")
 
+def logMe(msg: str) -> None: 
+    if VERBOSE:
+        LOGGER.info(msg)
+
+# region Main
 def main():
 
     # _summary_ 
     # TODO: Consider changing these to a ReadOnly class, tuple or const - singleton, this if fine
-    global VERBOSE
-    global STDOUT
-    global LOG_FILE
 
-    # region Set Default Values
-    # return_status:
-    # i: int = -1
-
-    # use a function for this and just globals, no need for a class. Could use a tuple
-    # for url and output file but this is a singleton use case
-
-    LOG_FILE = sys.argv[0] + ".log"
-    OUPUTFILE2= sys.argv[0] + ".txt"
-
-    logger.info("Main() Started.")
+    logMe("Main() Started.")
 
     try:
-        if len(sys.argv) > 5:
-            raise Exception("Too many arguments")
-    
-        try:
-            STDOUT = bool(sys.argv[4])
+        setLogger() 
+        logMe("In main.")    
+        OUPUTFILE2= sys.argv[0] + ".txt"
+        logMe(OUPUTFILE2)
 
-        except IndexError:
-            STDOUT = False
-            logger.info("Main() output not specified. 10")
-
-        try:
-            VERBOSE = bool(sys.argv[3])
-        except IndexError:
-            VERBOSE = False
-            logger.info("Main() has four arguments. 11")
-
+        # TODO: test if uri was supplied else set default 
         url = "https://www.postjobfree.com/jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100"
       
         # Should be good to go
-        # obj: requests.Response = getURLObj(url)
         obj = getURLObj(url)
 
-        logger.info("In main ... ")
+        LOGGER.info("In main ... ")
         
         if obj:  # Only write if content was successfully retrieved
             writeObj(obj, OUPUTFILE2)
             # Success ...
-            logger.info(f"Should be good. \n \t URL: {url} \
+            LOGGER.info(f"Should be good. \n \t URL: {url} \
                 \n\t File: {OUPUTFILE2} \
                 \n\t Output: {VERBOSE}"
             )
         
-            logger.info("Main: 12" + str(obj))
+            LOGGER.info("Main: 12" + str(obj))
             return_status = 0
         else: 
-            logger.error("Failed to retrieve content from URL.")
-            logger.info("Main: 13")
+            LOGGER.error("Failed to retrieve content from URL.")
+            LOGGER.info("Main: 13")
             return_status = -1
 
     except Exception as e:
-        logger.error(f"An error occurred: {e}")
-        logger.error("An error occurred in main 14", exc_info=True)
+        LOGGER.error(f"An error occurred: {e}")
+        LOGGER.error("An error occurred in main 14", exc_info=True)
 
 # endregion Main 
 
@@ -243,17 +237,20 @@ def main():
 
 if __name__ == "__main__":
     
-    logger = logging.getLogger(__name__)
+    # LOGGER = logging.getLOGGER(__name__)
+    # LOGGER  = logging.getLOGGER(__name__)
     logFile = sys.argv[0] + ".log" if sys.argv[0] else "foo" + ".log"
-    logging.basicConfig(filename=logFile, format="%(asctime)s %(message)s", filemode="a")
-    logger = logging.getLogger()
-    logger.setLevel(logging.DEBUG)
-    logger.setLevel(logging.DEBUG)
+    # logging.basicConfig(filename=logFile, format="%(asctime)s %(message)s", filemode="a")
+    # LOGGER.basicConfig(filename=logFile, format="%(asctime)s %(message)s", filemode="a")
+    # LOGGER = logging.getLogger()
+    LOGGER.setLevel(logging.DEBUG)
     try:
+
+      # to a function ... 
         logFile = sys.argv[0] + ".log" if sys.argv[0] else "foo" + ".log"
         logging.basicConfig(filename=logFile, format="%(asctime)s %(message)s", filemode="a")
-        logger = logging.getLogger()
-        logger.setLevel(logging.DEBUG)
+        LOGGER = logging.getLogger()
+        LOGGER.setLevel(logging.DEBUG)
         logging.info("__name __ Started. Calling main()")
         
         main()

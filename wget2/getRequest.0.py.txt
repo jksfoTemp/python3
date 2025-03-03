@@ -403,7 +403,7 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 </select>
 </form></td>
 	<td> <a href="/job-alert?q=data+entry&amp;l=San+Francisco%2c+CA&amp;radius=2" rel="nofollow">Job alert</a></td>
-	<td style="text-align:right;">Jobs <b>1</b> - <b>100</b> of <b>382</b></td>
+	<td style="text-align:right;">Jobs <b>1</b> - <b>100</b> of <b>397</b></td>
 </tr>
 </table>
 <div style="overflow-wrap:break-word;">
@@ -507,6 +507,15 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 </div>
 </div>
 <div class="snippetPadding">
+<h3 class="itemTitle"><a href="/job/wbkzj5/python-developer-entry-san-francisco-ca" rel="nofollow">Python Developer (Entry Level)</a></h3>
+<div class="normalText">
+	<span class="colorCompany">SynergisticIT</span>
+	&nbsp;&ndash;&nbsp;
+	<span class="colorLocation">San Francisco, CA</span>
+	<div><span class="jdSnippet">... Currently, We are looking for <b>entry</b>-level software programmers, Java Full stack developers, Python/Java developers, <b>Data</b> analysts/ <b>Data</b> Scientists, Machine Learning engineers for full time positions with clients. Who Should Apply Recent Computer ...</span> - <span class="colorDate">Mar 03</span></div>
+</div>
+</div>
+<div class="snippetPadding">
 <h3 class="itemTitle"><a href="/job/v888m5/rsch-data-anl-2-san-francisco-ca" rel="nofollow">Rsch Data Anl 2</a></h3>
 <div class="normalText">
 	<span class="colorCompany">University of California San Francisco</span>
@@ -569,6 +578,15 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 	&nbsp;&ndash;&nbsp;
 	<span class="colorLocation">San Francisco, CA</span>
 	<div><span class="jdSnippet">... Currently, We are looking for <b>entry</b>-level software programmers, Java Full stack developers, Python/Java developers, <b>Data</b> analysts/ <b>Data</b> Scientists, Machine Learning engineers. Who Should Apply Recent Computer science/Engineering /Mathematics ...</span> - <span class="colorDate">Feb 27</span></div>
+</div>
+</div>
+<div class="snippetPadding">
+<h3 class="itemTitle"><a href="/job/wbk5ke/entry-level-application-san-francisco-ca" rel="nofollow">Entry Level Application Development &amp; Support</a></h3>
+<div class="normalText">
+	<span class="colorCompany">Year Up United</span>
+	&nbsp;&ndash;&nbsp;
+	<span class="colorLocation">San Francisco, CA, 94151</span>
+	<div><span class="jdSnippet">... In-depth classes include: - Application Development &amp; Support - Customer Success - Helpdesk/Desktop Support - Project Management Support - <b>Data</b> Analytics - Quality Assurance - Business Fundamentals - Cyber Security Get the skills and opportunity you ...</span> - <span class="colorDate">Mar 03</span></div>
 </div>
 </div>
 <div class="snippetPadding">
@@ -726,6 +744,15 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 </div>
 </div>
 <div class="snippetPadding">
+<h3 class="itemTitle"><a href="/job/wbkwww/sales-consultant-sf-san-francisco-ca" rel="nofollow">Sales Consultant - SF</a></h3>
+<div class="normalText">
+	<span class="colorCompany">FreshPoint</span>
+	&nbsp;&ndash;&nbsp;
+	<span class="colorLocation">San Francisco, CA, 94102</span>
+	<div><span class="jdSnippet">... cell phone provided Career pathing opportunities for both <b>entry</b> level, and experienced individuals Opportunity to be part ... and analyze daily and weekly reports such as special-order requests, customer bid files, and sales/gross profit margin <b>data</b>. ...</span> - <span class="colorDate">Mar 03</span></div>
+</div>
+</div>
+<div class="snippetPadding">
 <h3 class="itemTitle"><a href="/job/waph8h/fashion-assistant-san-francisco-ca" rel="nofollow">Fashion Assistant</a></h3>
 <div class="normalText">
 	<span class="colorCompany">Randstad USA</span>
@@ -778,6 +805,15 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 	&nbsp;&ndash;&nbsp;
 	<span class="colorLocation">San Francisco, CA</span>
 	<div><span class="jdSnippet">... Reporting &amp; Evaluation: Assist in the collection and analysis of <b>data</b> to evaluate partnership and project outcomes and impact. Accurate and up to date reporting and <b>data</b> <b>entry</b> via CRM to enhance visibility to stakeholder status and track progress. ...</span> - <span class="colorDate">Feb 24</span></div>
+</div>
+</div>
+<div class="snippetPadding">
+<h3 class="itemTitle"><a href="/job/wbkxeh/senior-hr-systems-san-francisco-ca" rel="nofollow">Senior HR Systems Analyst</a></h3>
+<div class="normalText">
+	<span class="colorCompany">LVMH Group</span>
+	&nbsp;&ndash;&nbsp;
+	<span class="colorLocation">San Francisco, CA</span>
+	<div><span class="jdSnippet">... <b>Data</b> Management: Expertise in <b>data</b> <b>entry</b>, <b>data</b> validation, and <b>data</b> reporting within SuccessFactors. Ability to create and analyze complex reports to support HR decision-making. Training and Support: Capability to develop and deliver training ...</span> - <span class="colorDate">Mar 03</span></div>
 </div>
 </div>
 <div class="snippetPadding">
@@ -854,21 +890,21 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 </div>
 </div>
 <div class="snippetPadding">
-<h3 class="itemTitle"><a href="/job/v8xvyj/program-assistant-san-francisco-ca" rel="nofollow">Program Assistant</a></h3>
-<div class="normalText">
-	<span class="colorCompany">La Clinica de La Raza</span>
-	&nbsp;&ndash;&nbsp;
-	<span class="colorLocation">San Francisco, CA</span>
-	<div><span class="jdSnippet">... Tracks <b>data</b> and is responsible for <b>data</b> <b>entry</b> and managing/tracking large quantities of <b>data</b>. Is responsible for scheduling trainings, workshops, and meetings for program staff. Schedules childcare services for the various mental health workshops. ...</span> - <span class="colorDate">Feb 24</span></div>
-</div>
-</div>
-<div class="snippetPadding">
 <h3 class="itemTitle"><a href="/job/wanouh/project-administrator-san-francisco-ca" rel="nofollow">Project Administrator</a></h3>
 <div class="normalText">
 	<span class="colorCompany">Northland Controls</span>
 	&nbsp;&ndash;&nbsp;
 	<span class="colorLocation">San Francisco, CA</span>
 	<div><span class="jdSnippet">Job Details Job Location India - Bengaluru - Bengaluru, CA Description Northland Control Systems, Inc., is looking for a <b>Data</b> <b>Entry</b> Specialist to support the Project Management team. What type of candidate Northland is looking for: We strive to find ...</span> - <span class="colorDate">Mar 01</span></div>
+</div>
+</div>
+<div class="snippetPadding">
+<h3 class="itemTitle"><a href="/job/v8xvyj/program-assistant-san-francisco-ca" rel="nofollow">Program Assistant</a></h3>
+<div class="normalText">
+	<span class="colorCompany">La Clinica de La Raza</span>
+	&nbsp;&ndash;&nbsp;
+	<span class="colorLocation">San Francisco, CA</span>
+	<div><span class="jdSnippet">... Tracks <b>data</b> and is responsible for <b>data</b> <b>entry</b> and managing/tracking large quantities of <b>data</b>. Is responsible for scheduling trainings, workshops, and meetings for program staff. Schedules childcare services for the various mental health workshops. ...</span> - <span class="colorDate">Feb 24</span></div>
 </div>
 </div>
 <div class="snippetPadding">
@@ -888,6 +924,15 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 	<span class="colorLocation">San Francisco, CA</span>
 	<div class="colorSalary">$28.48 - $45.80 (hour</div>
 	<div><span class="jdSnippet">Under the supervision of a Clinical Research Supervisor or Principal Investigator (PI), the incumbent will perform <b>entry</b> ... help design flow sheets, <b>data</b> forms and source documents; gather and interpret medical, surgical and laboratory <b>data</b> ...</span> - <span class="colorDate">Feb 25</span></div>
+</div>
+</div>
+<div class="snippetPadding">
+<h3 class="itemTitle"><a href="/job/wbkwot/mandarin-sales-san-francisco-ca" rel="nofollow">Mandarin Sales Consultant</a></h3>
+<div class="normalText">
+	<span class="colorCompany">FreshPoint</span>
+	&nbsp;&ndash;&nbsp;
+	<span class="colorLocation">San Francisco, CA</span>
+	<div><span class="jdSnippet">... cell phone provided Career pathing opportunities for both <b>entry</b> level, and experienced individuals Opportunity to be part ... and analyze daily and weekly reports such as special-order requests, customer bid files, and sales/gross profit margin <b>data</b>. ...</span> - <span class="colorDate">Mar 03</span></div>
 </div>
 </div>
 <div class="snippetPadding">
@@ -956,15 +1001,6 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 </div>
 </div>
 <div class="snippetPadding">
-<h3 class="itemTitle"><a href="/job/wbfkye/mandarin-sales-san-francisco-ca" rel="nofollow">Mandarin Sales Consultant</a></h3>
-<div class="normalText">
-	<span class="colorCompany">Freshpoint</span>
-	&nbsp;&ndash;&nbsp;
-	<span class="colorLocation">San Francisco, CA, 94102</span>
-	<div><span class="jdSnippet">... cell phone provided Career pathing opportunities for both <b>entry</b> level, and experienced individuals Opportunity to be part ... and analyze daily and weekly reports such as special-order requests, customer bid files, and sales/gross profit margin <b>data</b>. ...</span> - <span class="colorDate">Mar 03</span></div>
-</div>
-</div>
-<div class="snippetPadding">
 <h3 class="itemTitle"><a href="/job/v34d3l/clin-rsch-crd-ast-san-francisco-ca" rel="nofollow">Clin Rsch Crd Ast</a></h3>
 <div class="normalText">
 	<span class="colorCompany">University of California San Francisco</span>
@@ -972,6 +1008,15 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 	<span class="colorLocation">San Francisco, CA</span>
 	<div class="colorSalary">$28.48 - $45.80 (hour</div>
 	<div><span class="jdSnippet">Under the supervision of a Clinical Research Supervisor or Principal Investigator (PI), the incumbent will perform <b>entry</b> ... help design flow sheets, <b>data</b> forms and source documents; gather and interpret medical, surgical and laboratory <b>data</b> ...</span> - <span class="colorDate">Feb 08</span></div>
+</div>
+</div>
+<div class="snippetPadding">
+<h3 class="itemTitle"><a href="/job/wbfkye/mandarin-sales-san-francisco-ca" rel="nofollow">Mandarin Sales Consultant</a></h3>
+<div class="normalText">
+	<span class="colorCompany">Freshpoint</span>
+	&nbsp;&ndash;&nbsp;
+	<span class="colorLocation">San Francisco, CA, 94102</span>
+	<div><span class="jdSnippet">... cell phone provided Career pathing opportunities for both <b>entry</b> level, and experienced individuals Opportunity to be part ... and analyze daily and weekly reports such as special-order requests, customer bid files, and sales/gross profit margin <b>data</b>. ...</span> - <span class="colorDate">Mar 03</span></div>
 </div>
 </div>
 <div class="snippetPadding">
@@ -1049,6 +1094,15 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 </div>
 </div>
 <div class="snippetPadding">
+<h3 class="itemTitle"><a href="/job/v8xvhq/clerical-coordinator-san-francisco-ca" rel="nofollow">Clerical Coordinator</a></h3>
+<div class="normalText">
+	<span class="colorCompany">Southcoast Health System</span>
+	&nbsp;&ndash;&nbsp;
+	<span class="colorLocation">San Francisco, CA</span>
+	<div><span class="jdSnippet">... Perform a variety of clerical duties including but not limited to: conduct patient interviews, provide clerical support, patient registration, <b>data</b>/order <b>entry</b>, transcription of orders, collation of medical records, and other clerical duties as ...</span> - <span class="colorDate">Feb 24</span></div>
+</div>
+</div>
+<div class="snippetPadding">
 <h3 class="itemTitle"><a href="/job/v6m7o3/clin-rsch-crd-ast-san-francisco-ca" rel="nofollow">Clin Rsch Crd Ast</a></h3>
 <div class="normalText">
 	<span class="colorCompany">University of California San Francisco</span>
@@ -1056,15 +1110,6 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 	<span class="colorLocation">San Francisco, CA</span>
 	<div class="colorSalary">$28.48 - $45.80 (hour</div>
 	<div><span class="jdSnippet">... Under the supervision of a Clinical Research Supervisor or Principal Investigator (PI), the aCRC will perform <b>entry</b>- level ... help design flow sheets, <b>data</b> forms and source documents; may apply understanding of inclusion/exclusion eligibility ...</span> - <span class="colorDate">Feb 15</span></div>
-</div>
-</div>
-<div class="snippetPadding">
-<h3 class="itemTitle"><a href="/job/v8xvhq/clerical-coordinator-san-francisco-ca" rel="nofollow">Clerical Coordinator</a></h3>
-<div class="normalText">
-	<span class="colorCompany">Southcoast Health System</span>
-	&nbsp;&ndash;&nbsp;
-	<span class="colorLocation">San Francisco, CA</span>
-	<div><span class="jdSnippet">... Perform a variety of clerical duties including but not limited to: conduct patient interviews, provide clerical support, patient registration, <b>data</b>/order <b>entry</b>, transcription of orders, collation of medical records, and other clerical duties as ...</span> - <span class="colorDate">Feb 24</span></div>
 </div>
 </div>
 <div class="snippetPadding">
@@ -1276,53 +1321,6 @@ var lacs = initAc('l', 'lacdiv', '/lach?csl=&l=');
 	<span class="colorLocation">San Francisco, CA</span>
 	<div class="colorSalary">70000USD - 85000USD per year</div>
 	<div><span class="jdSnippet">...  and invoicing of assigned work Qualifications Minimum: Ability to travel from office to worksite 1 to 2 days weekly <b>Data</b> <b>entry</b> capabilities with speed and accuracy Attention to detail and ability to multi-task Prioritize and plan work activities ...</span> - <span class="colorDate">Mar 03</span></div>
-</div>
-</div>
-<div class="snippetPadding">
-<h3 class="itemTitle"><a href="/job/v73a93/senior-field-marketing-san-francisco-ca" rel="nofollow">Senior Field Marketing Manager, North America &amp; LATAM</a></h3>
-<div class="normalText">
-	<span class="colorCompany">Mixpanel</span>
-	&nbsp;&ndash;&nbsp;
-	<span class="colorLocation">San Francisco, CA</span>
-	<div><span class="jdSnippet">... Streamline Post-Event Follow-Up: Implement marketing automation workflows for personalized, engagement-based event follow-ups, allowing more efficient <b>data</b> <b>entry</b> and follow-up consistency. Enhance Sales Visibility via Salesforce-Customer.io ...</span> - <span class="colorDate">Feb 20</span></div>
-</div>
-</div>
-<div class="snippetPadding">
-<h3 class="itemTitle"><a href="/job/v59yl8/sepal-program-analyst-san-francisco-ca">SEPAL Program &amp; Assessment Coordinator (Administrative Analyst</a></h3>
-<div class="normalText">
-	<span class="colorCompany">San Francisco State University</span>
-	&nbsp;&ndash;&nbsp;
-	<span class="colorLocation">San Francisco, CA</span>
-	<div class="colorSalary">$80,004.00 - $84,996.00 annual</div>
-	<div><span class="jdSnippet">... Oversee 2-3 Student Assistants that provide daily support of the SEPAL Resource Center (i.e., checking in/out materials, <b>data</b> <b>entry</b>, answering phones, answering emails, fulfilling orders).Coordinate weekly meetings with student assistants to discuss ...</span> - <span class="colorDate">Feb 24</span></div>
-</div>
-</div>
-<div class="snippetPadding">
-<h3 class="itemTitle"><a href="/job/v2qu1s/blackstone-credit-and-san-francisco-ca">Blackstone Credit and Insurance, Liquid Credit Strategies</a></h3>
-<div class="normalText">
-	<span class="colorCompany">Blackstone</span>
-	&nbsp;&ndash;&nbsp;
-	<span class="colorLocation">San Francisco, CA</span>
-	<div><span class="jdSnippet">... conditions and to formulate execution strategies Performing <b>data</b> validations and model output reviews Assisting with cash ... see Blackstone’s Careers website for other opportunities that may be available, including other <b>entry</b> level positions. ...</span> - <span class="colorDate">Feb 04</span></div>
-</div>
-</div>
-<div class="snippetPadding">
-<h3 class="itemTitle"><a href="/job/waviym/inbound-operations-san-francisco-ca" rel="nofollow">Inbound Operations Supervisor</a></h3>
-<div class="normalText">
-	<span class="colorCompany">Glint Tech Solutions</span>
-	&nbsp;&ndash;&nbsp;
-	<span class="colorLocation">San Francisco, CA</span>
-	<div class="colorSalary">$4,000.00 - $6,000.00 per month</div>
-	<div><span class="jdSnippet">... Proficient in Computer Operations: Must be skilled in using computers for tasks such as <b>data</b> <b>entry</b>, inventory management, and related software. Detail-Oriented and Responsible: Ability to work meticulously and maintain high levels of responsibility ...</span> - <span class="colorDate">Mar 01</span></div>
-</div>
-</div>
-<div class="snippetPadding">
-<h3 class="itemTitle"><a href="/job/v8ya6n/customer-service-san-francisco-ca">Customer Service Representative</a></h3>
-<div class="normalText">
-	<span class="colorCompany">GRETEL</span>
-	&nbsp;&ndash;&nbsp;
-	<span class="colorLocation">San Francisco, CA</span>
-	<div><span class="jdSnippet">... *<b>Data</b> <b>Entry</b> and Record-Keeping:* 1. Accurately document customer interactions in CRM software. 2. Update customer records with new information. 3. Maintain accurate records of customer interactions. *Quality and Performance:* 1. Meet or exceed ...</span> - <span class="colorDate">Mar 03</span></div>
 </div>
 </div><div id="diveja"></div>
 </div>

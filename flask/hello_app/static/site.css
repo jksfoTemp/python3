@@ -1,0 +1,51 @@
+/* body {
+  background-color: orange;
+  background-repeat: no-repeat;
+  background-position: top-left;
+} */
+h1 {
+  text-align: center;
+  font-family: Arial;
+  color: yellow;
+  background-color: blue;
+}
+p {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 48px;
+  color: green;
+  background-color: #333333;
+}
+.message {
+  font-weight: 600;
+  color: blue;
+  background-color: pink;
+}
+.navbar {
+  background-color: lightslategray;
+  font-size: 1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  padding: 8px 5px 8px 5px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-brand {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.navbar-item {
+  font-variant: small-caps;
+  margin-left: 30px;
+}
+
+.body-content {
+  padding: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

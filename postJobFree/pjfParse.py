@@ -6,6 +6,16 @@ string libraries. Demonstrates file access ...
 
 TODO: Add and print arguments to the main function to accept the job posting file path as input.
 TODO: Add parsing code to extract the job description from the job posting.
+
+
+Parsing errors ... soup ... 
+  (.venv) jku@jkMain:~/git/jksfoTemp/python3/.venv/bin$ pip install beautifulsoup4
+  Defaulting to user installation because normal site-packages is not writeable
+  Requirement already satisfied: beautifulsoup4 in /usr/lib/python3/dist-packages (4.10.0)
+  WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+      sys-platform (=="darwin") ; extra == 'objc'
+                  ~^
+
 """
 
 #TODO: find class values

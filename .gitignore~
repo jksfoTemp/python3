@@ -1,0 +1,17 @@
+.gitignore.BAK
+
+pySandBox/beautifulSoup/notes.md
+pySandBox/beautifulSoup/sampleFile.html.bak
+pySandBox/beautifulSoup/sampleFile.html.old
+pySandBox/beautifulSoup/scratchpad.0.md
+pySandBox/beautifulSoup/vsCodeEnvIssues.odt
+pySandBox/beautifulSoup/WebScraping101.html
+pySandbox/beautifulSoup/notes.md
+pySandbox/beautifulSoup/getRequest.0.py.log
+
+postJobFree/foo
+postJobFree/getURLObj
+
+flask/thisEnv/
+
+wget/env/

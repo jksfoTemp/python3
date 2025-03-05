@@ -17,3 +17,7 @@ flask/thisEnv/
 wget2/trash/
 wget2/*.txt
 wget2/*.log
+wget2/*.html
+wget2/*.bak 
+
+wget2/output.html

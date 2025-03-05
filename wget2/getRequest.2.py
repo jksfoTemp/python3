@@ -1,7 +1,10 @@
-import logging
 import os
 import sys
+import logging
+import requests
+from urllib.parse import urlparse
 
+# TODO: Avoid returning 'None' from a function ??? 
 
 class ControlValues:
     def __init__(self):
@@ -27,20 +30,37 @@ def setup_logger():
     
     log_file_path = os.path.join(log_directory, log_file_name)
 
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.DEBUG)  # Or your desired level
+    mylogger = logging.getLogger(__name__)
+    mylogger.setLevel(logging.DEBUG)  # Or your desired level
 
     file_handler = logging.FileHandler(log_file_path)
     formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     file_handler.setFormatter(formatter)
 
-    logger.addHandler(file_handler)
-    return logger
+    mylogger.addHandler(file_handler)
+    return mylogger
 
-def clear_terminal():
-    print("\033[H\033[J", end="")  # ANSI escape code to clear screen
+def clearTerminal():
+    # print("\033[H\033[J", end="")  # ANSI escape code to clear screen
+    os.system("cls" if os.name == "nt" else "clear")  # Clear the terminal
 
-def show_control_values(ctl: ControlValues):
+def get_application_directory():
+    """Gets the directory of the currently running Python script."""
+    return os.path.dirname(os.path.abspath(__file__))
+
+def setControlValues():
+    ctl = ControlValues()
+    # ctl.path = os.getcwd()
+    ctl.path = get_application_directory() # Get the directory of the currently running script not the CWD 
+    ctl.file_name = os.path.basename(__file__)
+    ctl.log_name = "/logs/" + os.path.splitext(ctl.file_name)[0] + ".log"
+    ctl.url = "https://www.google.com"
+    # url = "https://www.postjobfree.com/jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100"
+    ctl.outputfile = "output.html"
+    ctl.verbose = True
+    return ctl
+
+def showControlValues(ctl: ControlValues):
     print(f"Path: {ctl.path}")
     print(f"File Name: {ctl.file_name}")
     print(f"Log Name: {ctl.log_name}")
@@ -48,42 +68,156 @@ def show_control_values(ctl: ControlValues):
     print(f"Output File: {ctl.outputfile}")
     print(f"Verbose: {ctl.verbose}")  
 
-def set_control_values():
-    ctl = ControlValues()
-    ctl.path = os.getcwd()
-    ctl.file_name = os.path.basename(__file__)
-    ctl.log_name = "/logs/" + os.path.splitext(ctl.file_name)[0] + ".log"
-    ctl.url = "https://www.google.com"
-    ctl.outputfile = "output.html"
-    ctl.verbose = True
-    return ctl
+def setInputValues(lgr, controlValues): 
+    print ("Begin setInputValues")
+    # mylogger.info(f"Begin setInputValues")
+    lgr.info(f"Begin setInputValues")
+
+    try: 
+        # 3 inputs: url, outputfile, verbose  (filename is default at 0)
+        if len(sys.argv) > 1 and len(sys.argv) < 5:
+            # All I really care about here is the url 
+            if sys.argv[1]: 
+                controlValues.url = sys.argv[1]
+                controlValues.outputfile = sys.argv[1] + ".html" 
+        elif len(sys.argv) == 1:
+            print (f"Using default arguments: {len(sys.argv)}") 
+            lgr.info(f"Using default arguments: {len(sys.argv)}") 
+        else:
+            print (f"Too many arguments: {len(sys.argv)}") 
+            lgr.info(f"Too many arguments: {len(sys.argv)}") 
+    # TODO: Optional ... set verbose for extra logging or not 
+    except Exception as e:
+        print (f"An error occurred: {e}") 
+        lgr.info(f"End setInputValues")
+
+    finally:  
+        print ("End setInputValues")
+        lgr.info(f"End setInputValues - Finally")
+        # lgr.info(f"Result: {result}")
+
+def is_valid_url(lgr, url_string: str) -> bool:
+    """
+    Checks if a string is likely a valid URL based on syntax,
+    without making an HTTP request (no POST involved in validation).
+    Source: Ripped from gemini.google.com
+
+    Uses urllib.parse.urlparse to break down the URL and checks for
+    the presence of a scheme and a network location (netloc).
+
+    Args:
+        url_string: The string to validate.
+
+    Returns:
+        True if the string is likely a valid URL, False otherwise.
+    """
+    res: bool = False
+    try:
+        parsed_url = urlparse(url_string)
+        res = all([parsed_url.scheme, parsed_url.netloc])  # Check for both scheme and netloc
+    except Exception as e:  # Catch potential parsing errors, consider more specific exception if needed
+        print(f"An error occurred: {e}")
+        lgr.error(f"An error occurred: {e}")
+        res = False
+    finally: 
+        return res
+
+def getURLObj(lgr, urlT: str) -> requests.Response:
+    lgr.info(f"Enter getURLObj")
+
+    code: int = -1
+    r: requests.Response = requests.Response()
+    try:
+        r = requests.get(urlT)
+        code = r.status_code
+        if code == 200:
+            lgr.info(f"Got it: {code} " + str({r}))
+        else:
+            lgr.error(f"Error getting url: {urlT};  Response status code: {code}")
+    except Exception as e:
+        lgr.error(f"Exception occurred: {e}")
+    finally: 
+        print(f"Exit getURLObj")
+        lgr.info(f"Exit getURLObj")
+        return r
+
+# Still need to implement this
+def writeObj(lgr, obj: requests.Response, outFile: str):
+    print("Enter writeObj: " + outFile)
+    lgr.info("Enter writeObj: " + outFile)
+    try:
+        # Already tested for this in getURLObj 
+        # if obj is None:  # Handle case where no content was retrieved
+        #   # mylogger.error(f"No content to write to file: {obj} \n {outFile}")
+        #   # logMe(f"No content to write to file: {obj} \n {outFile}")
+        # return
+        with open(outFile, "wt") as f:
+            f.write(obj.content.decode("utf-8"))
+        lgr.info(f"exiting writeObj: {outFile} - success")
+    except Exception as e:
+        print(f"An error occurred writing the file: {e}")
+        lgr.error(f"An error occurred writing the file: {e}")
+    finally:
+        print("Exit writeObj")
+        lgr.info("Exit writeObj")
 
 def main():
-    logger = setup_logger()  # Set up logger before any logic
+    mylogger = setup_logger()  # Set up logger before any logic
+    mylogger.info("mylogger created.")
 
     try:
-        logger.info("Starting main program logic.")
-        # Your programming/business logic here...
-        clear_terminal()
-        print ("snoopy")
+        clearTerminal()
+        mylogger.info("Starting main program logic.")
+        print ("In main()")
         
-        ctl = set_control_values()
+        ctl = setControlValues()
+        showControlValues(ctl)  
 
         # TODO: actual logic 
 
-        show_control_values(ctl)  
+          # Next - new modules 
+          #   - soup (by domain - for now, could take and argument object) to parse file input 
+          # and export to csv
+          #   - append csv to file (LO Calc 'db')
+          #   - need consistent schema 
+        setInputValues(mylogger, ctl)
+        
+        # Validate the URL
+        if (is_valid_url(mylogger, ctl.url)): 
+            print ("Valid URL")
+            mylogger.info("Valid URL")
 
-        # Example:
-        result = 10 / 2
-        logger.info(f"Result: {result}")
-        raise ValueError("Actually it didn't, this is a sample.") #Raise an error to test logging.
+            # Actually get the response 
+            response = getURLObj(mylogger, ctl.url)
 
+            # validate the response
+            if response.status_code == 200:
+                print ("Response 200")
+                mylogger.info("Response 200")
+                # Actually write to file 
+                thisOutFile  = ctl.path + "/" + ctl.outputfile
+                writeObj(mylogger, response, thisOutFile)
+                mylogger.info("Where is the mylogger error?")
+
+            else:
+                print ("Response not 200")
+                mylogger.info("Response not 200")
+
+            print ("Should be done, why am I getting a logging error")
+            mylogger.info("Should be done, why am I getting a logging error?")
+
+        #Raise an error to test logging.
+        # raise ValueError("Actually it didn't, this is a test.") 
+
+    # Why am I getting an error here? 
     except Exception as e:
-        logger.error(f"An error occurred: {e}")
+        print(f"An error occurred: {e}")
+        mylogger.error(f"An error occurred: {e}")
         # Handle the error or re-raise it if necessary.
         # raise #Re-raise the error.
-
-    logger.info("Main program logic finished.")
+    finally:
+        print ("Main program logic finished")
+        mylogger.info("Main program logic finished.")
 
 if __name__ == "__main__":
     main()

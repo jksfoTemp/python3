@@ -1,0 +1,262 @@
+2025-03-05 00:23:51,065 - INFO - Starting main program logic.
+2025-03-05 00:23:53,844 - INFO - Result: 5.0
+2025-03-05 00:23:53,845 - ERROR - An error occurred: Example Error
+2025-03-05 00:23:53,845 - INFO - Main program logic finished.
+2025-03-05 01:02:46,116 - INFO - Starting main program logic.
+2025-03-05 01:02:48,438 - INFO - Result: 5.0
+2025-03-05 01:02:48,438 - ERROR - An error occurred: Actually it didn't, this is a sample.
+2025-03-05 01:02:48,439 - INFO - Main program logic finished.
+2025-03-05 01:15:11,317 - INFO - Starting main program logic.
+2025-03-05 01:15:33,942 - ERROR - An error occurred: name 'logger' is not defined
+2025-03-05 01:15:33,942 - INFO - Main program logic finished.
+2025-03-05 01:16:09,977 - INFO - Starting main program logic.
+2025-03-05 01:16:19,819 - ERROR - An error occurred: name 'logger' is not defined
+2025-03-05 01:16:27,371 - INFO - Main program logic finished.
+2025-03-05 01:19:04,227 - INFO - Starting main program logic.
+2025-03-05 01:19:11,268 - INFO - Begin setInputValues
+2025-03-05 01:19:30,892 - ERROR - An error occurred: name 'result' is not defined
+2025-03-05 01:19:30,892 - INFO - Main program logic finished.
+2025-03-05 01:20:33,048 - INFO - Starting main program logic.
+2025-03-05 01:21:03,749 - INFO - Begin setInputValues
+2025-03-05 01:21:14,432 - INFO - End setInputValues - Finally
+2025-03-05 01:21:14,432 - INFO - Result: 5.0
+2025-03-05 01:21:31,866 - ERROR - An error occurred: Actually it didn't, this is a sample.
+2025-03-05 01:21:34,116 - INFO - Main program logic finished.
+2025-03-05 01:42:18,131 - INFO - Starting main program logic.
+2025-03-05 01:42:20,784 - INFO - Begin setInputValues
+2025-03-05 01:42:20,785 - INFO - Too many arguments: 1
+2025-03-05 01:42:20,786 - INFO - End setInputValues - Finally
+2025-03-05 01:42:20,787 - INFO - Result: 5.0
+2025-03-05 01:42:20,787 - INFO - Main program logic finished.
+2025-03-05 01:43:04,856 - INFO - Starting main program logic.
+2025-03-05 01:43:06,756 - INFO - Begin setInputValues
+2025-03-05 01:43:06,756 - INFO - Too many arguments: 1
+2025-03-05 01:43:06,757 - INFO - End setInputValues - Finally
+2025-03-05 01:43:06,757 - INFO - Result: 5.0
+2025-03-05 01:43:06,757 - INFO - Main program logic finished.
+2025-03-05 01:43:13,526 - INFO - Starting main program logic.
+2025-03-05 01:43:19,764 - INFO - Begin setInputValues
+2025-03-05 01:43:34,768 - INFO - Too many arguments: 1
+2025-03-05 01:43:34,769 - INFO - End setInputValues - Finally
+2025-03-05 01:43:34,771 - INFO - Result: 5.0
+2025-03-05 01:43:34,771 - INFO - Main program logic finished.
+2025-03-05 01:44:55,314 - INFO - Starting main program logic.
+2025-03-05 01:44:56,778 - INFO - Begin setInputValues
+2025-03-05 01:44:56,779 - INFO - Using default arguments: 1
+2025-03-05 01:44:56,780 - INFO - End setInputValues - Finally
+2025-03-05 01:44:56,780 - INFO - Result: 5.0
+2025-03-05 01:44:56,781 - INFO - Main program logic finished.
+2025-03-05 01:55:11,318 - INFO - Starting main program logic.
+2025-03-05 01:55:14,246 - INFO - Begin setInputValues
+2025-03-05 01:55:14,247 - INFO - Using default arguments: 1
+2025-03-05 01:55:14,248 - INFO - End setInputValues - Finally
+2025-03-05 01:55:14,248 - INFO - Main program logic finished.
+2025-03-05 02:17:35,876 - INFO - Starting main program logic.
+2025-03-05 02:17:39,944 - INFO - Begin setInputValues
+2025-03-05 02:17:39,945 - INFO - Using default arguments: 1
+2025-03-05 02:17:39,945 - INFO - End setInputValues - Finally
+2025-03-05 02:17:39,946 - INFO - Valid URL
+2025-03-05 02:17:39,946 - INFO - Enter getURLObj
+2025-03-05 02:17:40,086 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 02:17:40,086 - INFO - Exit getURLObj
+2025-03-05 02:17:40,086 - INFO - Response 200
+2025-03-05 02:17:40,086 - INFO - Main program logic finished.
+2025-03-05 02:24:39,875 - INFO - Starting main program logic.
+2025-03-05 02:24:41,407 - INFO - Begin setInputValues
+2025-03-05 02:24:41,408 - INFO - Using default arguments: 1
+2025-03-05 02:24:41,408 - INFO - End setInputValues - Finally
+2025-03-05 02:24:41,409 - INFO - Valid URL
+2025-03-05 02:24:41,409 - INFO - Enter getURLObj
+2025-03-05 02:24:41,550 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 02:24:41,551 - INFO - Exit getURLObj
+2025-03-05 02:24:41,551 - INFO - Response 200
+2025-03-05 02:24:41,551 - INFO - Enter writeObj
+2025-03-05 02:24:56,040 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 02:27:49,007 - INFO - Starting main program logic.
+2025-03-05 02:27:56,547 - INFO - Begin setInputValues
+2025-03-05 02:28:06,763 - INFO - Using default arguments: 1
+2025-03-05 02:28:09,731 - INFO - End setInputValues - Finally
+2025-03-05 02:28:21,122 - INFO - Valid URL
+2025-03-05 02:28:31,243 - INFO - Enter getURLObj
+2025-03-05 02:29:05,497 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 02:29:10,688 - INFO - Exit getURLObj
+2025-03-05 02:29:18,683 - INFO - Response 200
+2025-03-05 02:29:22,980 - INFO - Enter writeObj
+2025-03-05 02:29:53,014 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 02:29:53,017 - INFO - Main program logic finished.
+2025-03-05 02:36:48,323 - INFO - Starting main program logic.
+2025-03-05 02:41:25,529 - INFO - Starting main program logic.
+2025-03-05 02:41:30,270 - INFO - Begin setInputValues
+2025-03-05 02:41:30,271 - INFO - Using default arguments: 1
+2025-03-05 02:41:30,271 - INFO - End setInputValues - Finally
+2025-03-05 02:41:30,272 - INFO - Valid URL
+2025-03-05 02:41:30,273 - INFO - Enter getURLObj
+2025-03-05 02:41:30,399 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 02:41:30,400 - INFO - Exit getURLObj
+2025-03-05 02:41:30,400 - INFO - Response 200
+2025-03-05 02:41:32,270 - INFO - Enter writeObjoutput.html
+2025-03-05 02:42:06,090 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 02:42:06,091 - INFO - Main program logic finished.
+2025-03-05 02:48:08,848 - INFO - Starting main program logic.
+2025-03-05 02:48:33,816 - INFO - Begin setInputValues
+2025-03-05 02:48:39,672 - INFO - Using default arguments: 1
+2025-03-05 02:48:48,272 - INFO - End setInputValues - Finally
+2025-03-05 02:48:53,493 - INFO - Valid URL
+2025-03-05 02:48:55,416 - INFO - Enter getURLObj
+2025-03-05 02:48:55,538 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 02:48:55,539 - INFO - Exit getURLObj
+2025-03-05 02:48:57,325 - INFO - Response 200
+2025-03-05 02:49:10,808 - INFO - Enter writeObj/home/jku/git/jksfoTemp/python3/wget2/output.html
+2025-03-05 02:50:04,574 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 02:50:06,228 - INFO - Main program logic finished.
+2025-03-05 03:08:50,537 - INFO - Starting main program logic.
+2025-03-05 03:08:50,539 - INFO - Begin setInputValues
+2025-03-05 03:08:50,539 - INFO - Using default arguments: 1
+2025-03-05 03:08:50,539 - INFO - End setInputValues - Finally
+2025-03-05 03:08:50,539 - INFO - Valid URL
+2025-03-05 03:08:50,539 - INFO - Enter getURLObj
+2025-03-05 03:08:50,678 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:08:50,679 - INFO - Exit getURLObj
+2025-03-05 03:08:50,679 - INFO - Response 200
+2025-03-05 03:08:50,679 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
+2025-03-05 03:08:50,679 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 03:08:50,679 - INFO - Main program logic finished.
+2025-03-05 03:09:39,112 - INFO - Starting main program logic.
+2025-03-05 03:09:39,114 - INFO - Begin setInputValues
+2025-03-05 03:09:39,114 - INFO - End setInputValues - Finally
+2025-03-05 03:09:39,115 - INFO - Main program logic finished.
+2025-03-05 03:11:11,210 - INFO - Starting main program logic.
+2025-03-05 03:11:11,213 - INFO - Begin setInputValues
+2025-03-05 03:11:11,216 - INFO - End setInputValues - Finally
+2025-03-05 03:11:11,216 - INFO - Valid URL
+2025-03-05 03:11:11,216 - INFO - Enter getURLObj
+2025-03-05 03:11:11,559 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:11:11,559 - INFO - Exit getURLObj
+2025-03-05 03:11:11,559 - INFO - Response 200
+2025-03-05 03:11:11,559 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/https://www.postjobfree.com/jobs?q=%22part+time%22&l=San+Francisco%2C+CA&radius=2.html
+2025-03-05 03:11:11,559 - ERROR - An error occurred writing the file: [Errno 2] No such file or directory: '/home/jku/git/jksfoTemp/python3/wget2/https://www.postjobfree.com/jobs?q=%22part+time%22&l=San+Francisco%2C+CA&radius=2.html'
+2025-03-05 03:11:11,559 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 03:11:11,560 - INFO - Main program logic finished.
+2025-03-05 03:12:24,944 - INFO - Starting main program logic.
+2025-03-05 03:12:27,611 - INFO - Begin setInputValues
+2025-03-05 03:12:27,611 - INFO - Using default arguments: 1
+2025-03-05 03:12:27,612 - INFO - End setInputValues - Finally
+2025-03-05 03:12:27,613 - INFO - Valid URL
+2025-03-05 03:12:27,613 - INFO - Enter getURLObj
+2025-03-05 03:12:27,720 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:12:27,720 - INFO - Exit getURLObj
+2025-03-05 03:12:27,721 - INFO - Response 200
+2025-03-05 03:12:38,523 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
+2025-03-05 03:12:53,688 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 03:12:53,689 - INFO - Main program logic finished.
+2025-03-05 03:14:42,693 - INFO - Starting main program logic.
+2025-03-05 03:15:14,748 - INFO - Begin setInputValues
+2025-03-05 03:17:29,450 - INFO - Starting main program logic.
+2025-03-05 03:17:29,452 - INFO - Begin setInputValues
+2025-03-05 03:17:29,452 - INFO - End setInputValues - Finally
+2025-03-05 03:17:29,452 - INFO - Valid URL
+2025-03-05 03:17:29,452 - INFO - Enter getURLObj
+2025-03-05 03:17:29,790 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:17:29,790 - INFO - Exit getURLObj
+2025-03-05 03:17:29,790 - INFO - Response 200
+2025-03-05 03:17:29,790 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/https://www.postjobfree.com/jobs?q=%22part+time%22&l=San+Francisco%2C+CA&radius=2.html
+2025-03-05 03:17:29,790 - ERROR - An error occurred writing the file: [Errno 2] No such file or directory: '/home/jku/git/jksfoTemp/python3/wget2/https://www.postjobfree.com/jobs?q=%22part+time%22&l=San+Francisco%2C+CA&radius=2.html'
+2025-03-05 03:17:29,790 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 03:17:29,790 - INFO - Main program logic finished.
+2025-03-05 03:18:43,800 - INFO - Starting main program logic.
+2025-03-05 03:18:43,802 - INFO - Begin setInputValues
+2025-03-05 03:18:43,802 - INFO - End setInputValues - Finally
+2025-03-05 03:18:43,803 - INFO - Valid URL
+2025-03-05 03:18:43,803 - INFO - Enter getURLObj
+2025-03-05 03:18:44,095 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:18:44,095 - INFO - Exit getURLObj
+2025-03-05 03:18:44,095 - INFO - Response 200
+2025-03-05 03:18:44,095 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/https://www.postjobfree.com/jobs?q=%22part+time%22&l=San+Francisco%2C+CA&radius=2.html
+2025-03-05 03:18:44,096 - ERROR - An error occurred writing the file: [Errno 2] No such file or directory: '/home/jku/git/jksfoTemp/python3/wget2/https://www.postjobfree.com/jobs?q=%22part+time%22&l=San+Francisco%2C+CA&radius=2.html'
+2025-03-05 03:18:44,096 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 03:18:44,096 - INFO - Main program logic finished.
+2025-03-05 03:19:33,587 - INFO - Starting main program logic.
+2025-03-05 03:19:37,894 - INFO - Begin setInputValues
+2025-03-05 03:19:38,911 - INFO - Using default arguments: 1
+2025-03-05 03:19:38,912 - INFO - End setInputValues - Finally
+2025-03-05 03:19:38,913 - INFO - Valid URL
+2025-03-05 03:19:38,913 - INFO - Enter getURLObj
+2025-03-05 03:19:39,024 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:19:39,024 - INFO - Exit getURLObj
+2025-03-05 03:19:39,024 - INFO - Response 200
+2025-03-05 03:19:58,838 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
+2025-03-05 03:20:19,551 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 03:20:28,078 - INFO - Main program logic finished.
+2025-03-05 03:25:09,544 - INFO - Starting main program logic.
+2025-03-05 03:25:13,238 - INFO - Begin setInputValues
+2025-03-05 03:25:14,438 - INFO - Using default arguments: 1
+2025-03-05 03:25:14,439 - INFO - End setInputValues - Finally
+2025-03-05 03:25:14,440 - INFO - Valid URL
+2025-03-05 03:25:14,440 - INFO - Enter getURLObj
+2025-03-05 03:25:14,595 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:25:14,596 - INFO - Exit getURLObj
+2025-03-05 03:25:14,596 - INFO - Response 200
+2025-03-05 03:25:17,495 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
+2025-03-05 03:25:17,497 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 03:25:17,498 - INFO - Main program logic finished.
+2025-03-05 03:31:25,291 - INFO - Starting main program logic.
+2025-03-05 03:31:27,419 - ERROR - An error occurred: name 'logger' is not defined
+2025-03-05 03:31:27,420 - INFO - Main program logic finished.
+2025-03-05 03:31:35,375 - INFO - Starting main program logic.
+2025-03-05 03:31:36,643 - ERROR - An error occurred: name 'logger' is not defined
+2025-03-05 03:31:36,643 - INFO - Main program logic finished.
+2025-03-05 03:32:46,579 - INFO - Starting main program logic.
+2025-03-05 03:32:50,126 - INFO - Begin setInputValues
+2025-03-05 03:32:51,030 - INFO - Using default arguments: 1
+2025-03-05 03:32:51,031 - INFO - End setInputValues - Finally
+2025-03-05 03:32:51,032 - INFO - Valid URL
+2025-03-05 03:32:51,032 - INFO - Enter getURLObj
+2025-03-05 03:32:51,139 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:32:51,140 - INFO - Exit getURLObj
+2025-03-05 03:32:51,140 - INFO - Response 200
+2025-03-05 03:32:52,782 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
+2025-03-05 03:32:52,784 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 03:32:52,784 - INFO - Main program logic finished.
+2025-03-05 03:36:19,374 - INFO - mylogger created.
+2025-03-05 03:36:19,377 - INFO - Starting main program logic.
+2025-03-05 03:36:21,923 - INFO - Begin setInputValues
+2025-03-05 03:36:22,763 - INFO - Using default arguments: 1
+2025-03-05 03:36:22,763 - INFO - End setInputValues - Finally
+2025-03-05 03:36:22,764 - INFO - Valid URL
+2025-03-05 03:36:22,764 - INFO - Enter getURLObj
+2025-03-05 03:36:22,896 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:36:22,897 - INFO - Exit getURLObj
+2025-03-05 03:36:22,898 - INFO - Response 200
+2025-03-05 03:36:32,627 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
+2025-03-05 03:36:59,394 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 03:37:00,321 - INFO - Main program logic finished.
+2025-03-05 03:38:12,118 - INFO - mylogger created.
+2025-03-05 03:38:12,121 - INFO - Starting main program logic.
+2025-03-05 03:38:16,559 - INFO - Begin setInputValues
+2025-03-05 03:38:17,190 - INFO - Using default arguments: 1
+2025-03-05 03:38:17,191 - INFO - End setInputValues - Finally
+2025-03-05 03:38:17,192 - INFO - Valid URL
+2025-03-05 03:38:17,192 - INFO - Enter getURLObj
+2025-03-05 03:38:17,317 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:38:17,317 - INFO - Exit getURLObj
+2025-03-05 03:38:17,318 - INFO - Response 200
+2025-03-05 03:38:23,749 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
+2025-03-05 03:38:27,062 - INFO - exiting writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html - success
+2025-03-05 03:39:15,614 - ERROR - An error occurred: 'Logger' object is not callable
+2025-03-05 03:39:15,615 - INFO - Main program logic finished.
+2025-03-05 03:41:22,378 - INFO - mylogger created.
+2025-03-05 03:41:22,381 - INFO - Starting main program logic.
+2025-03-05 03:41:25,561 - INFO - Begin setInputValues
+2025-03-05 03:41:26,155 - INFO - Using default arguments: 1
+2025-03-05 03:41:26,155 - INFO - End setInputValues - Finally
+2025-03-05 03:41:26,156 - INFO - Valid URL
+2025-03-05 03:41:26,157 - INFO - Enter getURLObj
+2025-03-05 03:41:26,296 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 03:41:26,296 - INFO - Exit getURLObj
+2025-03-05 03:41:26,297 - INFO - Response 200
+2025-03-05 03:41:31,041 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
+2025-03-05 03:41:34,310 - INFO - exiting writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html - success
+2025-03-05 03:41:36,491 - INFO - Exit writeObj
+2025-03-05 03:41:37,689 - INFO - Where is the mylogger error?
+2025-03-05 03:41:39,691 - INFO - Should be done, why am I getting a logging error?
+2025-03-05 03:41:41,572 - INFO - Main program logic finished.

@@ -15,3 +15,5 @@ postJobFree/getURLObj
 flask/thisEnv/
 
 wget/env/
+wget/trash/
+wget/*.txt

@@ -49,6 +49,7 @@ def get_application_directory():
     return os.path.dirname(os.path.abspath(__file__))
 
 def setControlValues():
+    out: str = "" 
     ctl = ControlValues()
     # ctl.path = os.getcwd()
     ctl.path = get_application_directory() # Get the directory of the currently running script not the CWD 
@@ -56,11 +57,16 @@ def setControlValues():
     ctl.log_name = "/logs/" + os.path.splitext(ctl.file_name)[0] + ".log"
     ctl.url = "https://www.google.com"
     # url = "https://www.postjobfree.com/jobs?q=data+entry&n=&t=&c=&l=San+Francisco%2C+CA&radius=2&r=100"
-    ctl.outputfile = "output.html"
+    # out = ctl.url.replace("//", "-") + ".html"
+    # out = out.replace("https:", "")
+    out = ctl.url.replace("https://", "")
+    out = out.replace("//", "-") + ".html"
+    # ctl.outputfile = "output.html"
+    ctl.outputfile = out 
     ctl.verbose = True
     return ctl
 
-def showControlValues(ctl: ControlValues):
+def showControlValues(lgr, ctl: ControlValues):
     print(f"Path: {ctl.path}")
     print(f"File Name: {ctl.file_name}")
     print(f"Log Name: {ctl.log_name}")
@@ -68,18 +74,39 @@ def showControlValues(ctl: ControlValues):
     print(f"Output File: {ctl.outputfile}")
     print(f"Verbose: {ctl.verbose}")  
 
+    lgr.info(f"Path: {ctl.path}")
+    lgr.info(f"File Name: {ctl.file_name}")
+    lgr.info(f"Log Name: {ctl.log_name}")
+    lgr.info(f"URL: {ctl.url}")
+    lgr.info(f"Output File: {ctl.outputfile}")
+    lgr.info(f"Verbose: {ctl.verbose}")  
+             
+def ensure_https(url):
+    """Ensures a URL starts with 'https://'."""
+    parsed_url = urlparse(url)
+    if not parsed_url.scheme:
+        return "https://" + url
+    elif parsed_url.scheme != 'https':
+        return "https://" + parsed_url.netloc + parsed_url.path + "?" + parsed_url.query + "#" + parsed_url.fragment #Rebuild the url with https.
+    return url
+
 def setInputValues(lgr, controlValues): 
-    print ("Begin setInputValues")
+    print ("Begin setInputValues - to override defaults") 
     # mylogger.info(f"Begin setInputValues")
     lgr.info(f"Begin setInputValues")
-
+    
     try: 
         # 3 inputs: url, outputfile, verbose  (filename is default at 0)
         if len(sys.argv) > 1 and len(sys.argv) < 5:
             # All I really care about here is the url 
             if sys.argv[1]: 
-                controlValues.url = sys.argv[1]
-                controlValues.outputfile = sys.argv[1] + ".html" 
+                url: str = sys.argv[1]
+                # append https:// if not there 
+                controlValues.url = ensure_https(url)
+                out: str = "" 
+                out = controlValues.url.replace("https://", "")
+                out = out.replace("//", "-") + ".html"
+                controlValues.outputfile = out # sys.argv[1] + ".html" 
         elif len(sys.argv) == 1:
             print (f"Using default arguments: {len(sys.argv)}") 
             lgr.info(f"Using default arguments: {len(sys.argv)}") 
@@ -92,14 +119,14 @@ def setInputValues(lgr, controlValues):
         lgr.info(f"End setInputValues")
 
     finally:  
-        print ("End setInputValues")
+        # print ("End setInputValues")
         lgr.info(f"End setInputValues - Finally")
         # lgr.info(f"Result: {result}")
 
 def is_valid_url(lgr, url_string: str) -> bool:
     """
     Checks if a string is likely a valid URL based on syntax,
-    without making an HTTP request (no POST involved in validation).
+    without making an HTTP request 
     Source: Ripped from gemini.google.com
 
     Uses urllib.parse.urlparse to break down the URL and checks for
@@ -116,8 +143,8 @@ def is_valid_url(lgr, url_string: str) -> bool:
         parsed_url = urlparse(url_string)
         res = all([parsed_url.scheme, parsed_url.netloc])  # Check for both scheme and netloc
     except Exception as e:  # Catch potential parsing errors, consider more specific exception if needed
-        print(f"An error occurred: {e}")
-        lgr.error(f"An error occurred: {e}")
+        print(f"An error occurred, looks like a bad URL: " + url_string + "{e}")
+        lgr.error(f"An error occurred, looks like a bad URL: " + url_string + " {e}")
         res = False
     finally: 
         return res
@@ -137,11 +164,10 @@ def getURLObj(lgr, urlT: str) -> requests.Response:
     except Exception as e:
         lgr.error(f"Exception occurred: {e}")
     finally: 
-        print(f"Exit getURLObj")
+        # print(f"Exit getURLObj")
         lgr.info(f"Exit getURLObj")
         return r
 
-# Still need to implement this
 def writeObj(lgr, obj: requests.Response, outFile: str):
     print("Enter writeObj: " + outFile)
     lgr.info("Enter writeObj: " + outFile)
@@ -158,7 +184,7 @@ def writeObj(lgr, obj: requests.Response, outFile: str):
         print(f"An error occurred writing the file: {e}")
         lgr.error(f"An error occurred writing the file: {e}")
     finally:
-        print("Exit writeObj")
+        # print("Exit writeObj")
         lgr.info("Exit writeObj")
 
 def main():
@@ -171,7 +197,7 @@ def main():
         print ("In main()")
         
         ctl = setControlValues()
-        showControlValues(ctl)  
+        showControlValues(mylogger, ctl)  
 
         # TODO: actual logic 
 
@@ -183,7 +209,8 @@ def main():
         setInputValues(mylogger, ctl)
         
         # Validate the URL
-        if (is_valid_url(mylogger, ctl.url)): 
+        #if (is_valid_url(mylogger, ctl.url)): 
+        if (is_valid_url(mylogger, "https://" + ctl.url)): 
             print ("Valid URL")
             mylogger.info("Valid URL")
 
@@ -192,22 +219,25 @@ def main():
 
             # validate the response
             if response.status_code == 200:
-                print ("Response 200")
-                mylogger.info("Response 200")
+                # print ("Response 200")
+                # mylogger.info("Response 200")
                 # Actually write to file 
                 thisOutFile  = ctl.path + "/" + ctl.outputfile
                 writeObj(mylogger, response, thisOutFile)
-                mylogger.info("Where is the mylogger error?")
+                # mylogger.info("Where is the mylogger error?")
 
             else:
                 print ("Response not 200")
                 mylogger.info("Response not 200")
 
-            print ("Should be done, why am I getting a logging error")
-            mylogger.info("Should be done, why am I getting a logging error?")
+            # print ("Should be done, why am I getting a logging error")
+            # mylogger.info("Should be done, why am I getting a logging error?")
 
-        #Raise an error to test logging.
-        # raise ValueError("Actually it didn't, this is a test.") 
+        else: 
+            #Raise an error to test logging.
+            # raise ValueError("Actually it didn't, this is a test.") 
+            err: str = "Apparently invalid URL." + ctl.url
+            raise ValueError(err) 
 
     # Why am I getting an error here? 
     except Exception as e:

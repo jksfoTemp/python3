@@ -4,15 +4,17 @@ import logging
 import requests
 from urllib.parse import urlparse
 
+# TODO: change this to handle any form of url (http, https, www, etc.)  
 # TODO: Avoid returning 'None' from a function ??? 
+
 
 class ControlValues:
     def __init__(self):
-        self.path = ""
-        self.file_name = ""
-        self.log_name = ""
-        self.url = ""
-        self.outputfile = ""
+        self.path = "./"
+        self.file_name = "foo.py"
+        self.log_name = "foo.log"
+        self.url = "cnn.com"
+        self.outputfile = "cnn.com.html"
         self.verbose: bool = False
 
 def setup_logger():
@@ -101,11 +103,17 @@ def setInputValues(lgr, controlValues):
             # All I really care about here is the url 
             if sys.argv[1]: 
                 url: str = sys.argv[1]
+
+# ABC  problem is here 
+
                 # append https:// if not there 
-                controlValues.url = ensure_https(url)
-                out: str = "" 
-                out = controlValues.url.replace("https://", "")
-                out = out.replace("//", "-") + ".html"
+                out = ensure_https(url)
+                out = out.replace("https://", "")  
+                out = out.replace("http://", "")  
+
+# I'm losing the last '/' here ... 
+
+                out = "/" + out.replace("/", "-") + ".html"
                 controlValues.outputfile = out # sys.argv[1] + ".html" 
         elif len(sys.argv) == 1:
             print (f"Using default arguments: {len(sys.argv)}") 
@@ -169,8 +177,8 @@ def getURLObj(lgr, urlT: str) -> requests.Response:
         return r
 
 def writeObj(lgr, obj: requests.Response, outFile: str):
-    print("Enter writeObj: " + outFile)
-    lgr.info("Enter writeObj: " + outFile)
+    print("Enter writeObj - this is the output file name: " + outFile)
+    lgr.info("Enter writeObj - this is the output file name: " + outFile)
     try:
         # Already tested for this in getURLObj 
         # if obj is None:  # Handle case where no content was retrieved
@@ -222,9 +230,18 @@ def main():
                 # print ("Response 200")
                 # mylogger.info("Response 200")
                 # Actually write to file 
+                # thisOutFile  = ctl.path + "/" + ctl.outputfile
+                # thisOutFile  = ctl.path + "-" + ctl.outputfile
+                # thisOutFile  = ctl.path + "-" + ctl.outputfile
                 thisOutFile  = ctl.path + "/" + ctl.outputfile
+
+                print ("File to write: " + thisOutFile)
+                mylogger.info("File to write: " + thisOutFile)
+
+                # Bob's your uncle 
+
                 writeObj(mylogger, response, thisOutFile)
-                # mylogger.info("Where is the mylogger error?")
+                # mylogger.info("Where is the mylogger ergror?")
 
             else:
                 print ("Response not 200")

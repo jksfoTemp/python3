@@ -1,43 +1,151 @@
-2025-03-05 03:38:17,190 - INFO - Using default arguments: 1
-2025-03-05 03:38:17,191 - INFO - End setInputValues - Finally
-2025-03-05 03:38:17,192 - INFO - Valid URL
-2025-03-05 03:38:17,192 - INFO - Enter getURLObj
-2025-03-05 03:38:17,317 - INFO - Got it: 200 {<Response [200]>}
-2025-03-05 03:38:17,317 - INFO - Exit getURLObj
-2025-03-05 03:38:17,318 - INFO - Response 200
-2025-03-05 03:38:23,749 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
-2025-03-05 03:38:27,062 - INFO - exiting writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html - success
-2025-03-05 03:39:15,614 - ERROR - An error occurred: 'Logger' object is not callable
-2025-03-05 03:39:15,615 - INFO - Main program logic finished.
-2025-03-05 03:41:22,378 - INFO - mylogger created.
-2025-03-05 03:41:22,381 - INFO - Starting main program logic.
-2025-03-05 03:41:25,561 - INFO - Begin setInputValues
-2025-03-05 03:41:26,155 - INFO - Using default arguments: 1
-2025-03-05 03:41:26,155 - INFO - End setInputValues - Finally
-2025-03-05 03:41:26,156 - INFO - Valid URL
-2025-03-05 03:41:26,157 - INFO - Enter getURLObj
-2025-03-05 03:41:26,296 - INFO - Got it: 200 {<Response [200]>}
-2025-03-05 03:41:26,296 - INFO - Exit getURLObj
-2025-03-05 03:41:26,297 - INFO - Response 200
-2025-03-05 03:41:31,041 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
-2025-03-05 03:41:34,310 - INFO - exiting writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html - success
-2025-03-05 03:41:36,491 - INFO - Exit writeObj
-2025-03-05 03:41:37,689 - INFO - Where is the mylogger error?
-2025-03-05 03:41:39,691 - INFO - Should be done, why am I getting a logging error?
-2025-03-05 03:41:41,572 - INFO - Main program logic finished.
-2025-03-05 11:24:28,985 - INFO - mylogger created.
-2025-03-05 11:24:28,988 - INFO - Starting main program logic.
-2025-03-05 11:24:34,383 - INFO - Begin setInputValues
-2025-03-05 11:24:35,164 - INFO - Using default arguments: 1
-2025-03-05 11:24:35,164 - INFO - End setInputValues - Finally
-2025-03-05 11:24:35,165 - INFO - Valid URL
-2025-03-05 11:24:35,166 - INFO - Enter getURLObj
-2025-03-05 11:24:35,291 - INFO - Got it: 200 {<Response [200]>}
-2025-03-05 11:24:35,291 - INFO - Exit getURLObj
-2025-03-05 11:24:35,292 - INFO - Response 200
-2025-03-05 11:24:37,671 - INFO - Enter writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html
-2025-03-05 11:24:37,673 - INFO - exiting writeObj: /home/jku/git/jksfoTemp/python3/wget2/output.html - success
-2025-03-05 11:24:37,673 - INFO - Exit writeObj
-2025-03-05 11:24:37,674 - INFO - Where is the mylogger error?
-2025-03-05 11:24:37,674 - INFO - Should be done, why am I getting a logging error?
-2025-03-05 11:24:37,674 - INFO - Main program logic finished.
+2025-03-05 23:01:37,555 - INFO - mylogger created.
+2025-03-05 23:01:37,558 - INFO - Starting main program logic.
+2025-03-05 23:01:37,559 - INFO - Path: /home/jku/git/jksfoTemp/python3/wget2
+2025-03-05 23:01:37,560 - INFO - File Name: getRequest.2.py
+2025-03-05 23:01:37,560 - INFO - Log Name: /logs/getRequest.2.log
+2025-03-05 23:01:37,560 - INFO - URL: https://www.google.com
+2025-03-05 23:01:37,560 - INFO - Output File: www.google.com.html
+2025-03-05 23:01:37,560 - INFO - Verbose: True
+2025-03-05 23:01:39,623 - INFO - Begin setInputValues
+2025-03-05 23:01:39,624 - INFO - End setInputValues - Finally
+2025-03-05 23:01:39,625 - INFO - Valid URL
+2025-03-05 23:01:39,625 - INFO - Enter getURLObj
+2025-03-05 23:01:39,995 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 23:01:39,995 - INFO - Exit getURLObj
+2025-03-05 23:01:39,996 - INFO - File to write: /home/jku/git/jksfoTemp/python3/wget2-www.postjobfree.com/jobs?q=%22part+time%22.html
+2025-03-05 23:01:39,997 - INFO - Enter writeObj - this is the output file name: /home/jku/git/jksfoTemp/python3/wget2-www.postjobfree.com/jobs?q=%22part+time%22.html
+2025-03-05 23:01:39,998 - ERROR - An error occurred writing the file: [Errno 2] No such file or directory: '/home/jku/git/jksfoTemp/python3/wget2-www.postjobfree.com/jobs?q=%22part+time%22.html'
+2025-03-05 23:01:39,998 - INFO - Exit writeObj
+2025-03-05 23:01:39,998 - INFO - Main program logic finished.
+2025-03-05 23:30:04,639 - INFO - mylogger created.
+2025-03-05 23:30:04,643 - INFO - Starting main program logic.
+2025-03-05 23:30:04,644 - INFO - Path: /home/jku/git/jksfoTemp/python3/wget2
+2025-03-05 23:30:04,644 - INFO - File Name: getRequest.2.py
+2025-03-05 23:30:04,644 - INFO - Log Name: /logs/getRequest.2.log
+2025-03-05 23:30:04,645 - INFO - URL: https://www.google.com
+2025-03-05 23:30:04,645 - INFO - Output File: www.google.com.html
+2025-03-05 23:30:04,645 - INFO - Verbose: True
+2025-03-05 23:30:14,229 - INFO - Begin setInputValues
+2025-03-05 23:30:14,232 - INFO - End setInputValues - Finally
+2025-03-05 23:30:19,101 - INFO - Valid URL
+2025-03-05 23:30:19,102 - INFO - Enter getURLObj
+2025-03-05 23:30:19,486 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 23:30:19,487 - INFO - Exit getURLObj
+2025-03-05 23:30:19,487 - INFO - File to write: /home/jku/git/jksfoTemp/python3/wget2-www.postjobfree.com/jobs?q=%22part+time%22.html
+2025-03-05 23:39:29,518 - INFO - mylogger created.
+2025-03-05 23:39:29,524 - INFO - Starting main program logic.
+2025-03-05 23:39:29,525 - INFO - Path: /home/jku/git/jksfoTemp/python3/wget2
+2025-03-05 23:39:29,525 - INFO - File Name: getRequest.2.py
+2025-03-05 23:39:29,525 - INFO - Log Name: /logs/getRequest.2.log
+2025-03-05 23:39:29,526 - INFO - URL: https://www.google.com
+2025-03-05 23:39:29,526 - INFO - Output File: www.google.com.html
+2025-03-05 23:39:29,526 - INFO - Verbose: True
+2025-03-05 23:39:29,526 - INFO - Begin setInputValues
+2025-03-05 23:41:38,469 - INFO - mylogger created.
+2025-03-05 23:41:38,475 - INFO - Starting main program logic.
+2025-03-05 23:41:38,476 - INFO - Path: /home/jku/git/jksfoTemp/python3/wget2
+2025-03-05 23:41:38,476 - INFO - File Name: getRequest.2.py
+2025-03-05 23:41:38,476 - INFO - Log Name: /logs/getRequest.2.log
+2025-03-05 23:41:38,476 - INFO - URL: https://www.google.com
+2025-03-05 23:41:38,476 - INFO - Output File: www.google.com.html
+2025-03-05 23:41:38,477 - INFO - Verbose: True
+2025-03-05 23:41:38,477 - INFO - Begin setInputValues
+2025-03-05 23:45:23,338 - INFO - mylogger created.
+2025-03-05 23:45:23,344 - INFO - Starting main program logic.
+2025-03-05 23:45:23,345 - INFO - Path: /home/jku/git/jksfoTemp/python3/wget2
+2025-03-05 23:45:23,345 - INFO - File Name: getRequest.2.py
+2025-03-05 23:45:23,345 - INFO - Log Name: /logs/getRequest.2.log
+2025-03-05 23:45:23,345 - INFO - URL: https://www.google.com
+2025-03-05 23:45:23,346 - INFO - Output File: www.google.com.html
+2025-03-05 23:45:23,346 - INFO - Verbose: True
+2025-03-05 23:45:23,346 - INFO - Begin setInputValues
+2025-03-05 23:49:25,330 - INFO - mylogger created.
+2025-03-05 23:49:25,335 - INFO - Starting main program logic.
+2025-03-05 23:49:25,336 - INFO - Path: /home/jku/git/jksfoTemp/python3/wget2
+2025-03-05 23:49:25,336 - INFO - File Name: getRequest.2.py
+2025-03-05 23:49:25,336 - INFO - Log Name: /logs/getRequest.2.log
+2025-03-05 23:49:25,336 - INFO - URL: https://www.google.com
+2025-03-05 23:49:25,337 - INFO - Output File: www.google.com.html
+2025-03-05 23:49:25,337 - INFO - Verbose: True
+2025-03-05 23:49:25,337 - INFO - Begin setInputValues
+2025-03-05 23:49:35,445 - INFO - End setInputValues - Finally
+2025-03-05 23:49:35,447 - INFO - Valid URL
+2025-03-05 23:49:35,452 - INFO - Enter getURLObj
+2025-03-05 23:49:35,608 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 23:49:35,608 - INFO - Exit getURLObj
+2025-03-05 23:49:35,609 - INFO - File to write: /home/jku/git/jksfoTemp/python3/wget2-www.postjobfree.com-jobs?q=%22part+time%22.html
+2025-03-05 23:49:39,152 - INFO - Enter writeObj - this is the output file name: /home/jku/git/jksfoTemp/python3/wget2-www.postjobfree.com-jobs?q=%22part+time%22.html
+2025-03-05 23:49:48,046 - INFO - exiting writeObj: /home/jku/git/jksfoTemp/python3/wget2-www.postjobfree.com-jobs?q=%22part+time%22.html - success
+2025-03-05 23:49:50,061 - INFO - Exit writeObj
+2025-03-05 23:49:52,077 - INFO - Main program logic finished.
+2025-03-05 23:54:36,891 - INFO - mylogger created.
+2025-03-05 23:54:36,896 - INFO - Starting main program logic.
+2025-03-05 23:54:36,896 - INFO - Path: /home/jku/git/jksfoTemp/python3/wget2
+2025-03-05 23:54:36,896 - INFO - File Name: getRequest.2.py
+2025-03-05 23:54:36,897 - INFO - Log Name: /logs/getRequest.2.log
+2025-03-05 23:54:36,897 - INFO - URL: https://www.google.com
+2025-03-05 23:54:36,897 - INFO - Output File: www.google.com.html
+2025-03-05 23:54:36,897 - INFO - Verbose: True
+2025-03-05 23:54:36,897 - INFO - Begin setInputValues
+2025-03-05 23:54:44,616 - INFO - End setInputValues - Finally
+2025-03-05 23:54:44,617 - INFO - Valid URL
+2025-03-05 23:54:44,618 - INFO - Enter getURLObj
+2025-03-05 23:54:44,744 - INFO - Got it: 200 {<Response [200]>}
+2025-03-05 23:54:44,744 - INFO - Exit getURLObj
+2025-03-05 23:54:44,745 - INFO - File to write: /home/jku/git/jksfoTemp/python3/wget2-/www.postjobfree.com-jobs?q=%22part+time%22.html
+2025-03-06 00:03:52,517 - INFO - Enter writeObj - this is the output file name: /home/jku/git/jksfoTemp/python3/wget2-/www.postjobfree.com-jobs?q=%22part+time%22.html
+2025-03-06 00:04:10,356 - ERROR - An error occurred writing the file: [Errno 2] No such file or directory: '/home/jku/git/jksfoTemp/python3/wget2-/www.postjobfree.com-jobs?q=%22part+time%22.html'
+2025-03-06 00:04:14,865 - INFO - Exit writeObj
+2025-03-06 00:04:19,760 - INFO - Main program logic finished.
+2025-03-06 00:05:16,426 - INFO - mylogger created.
+2025-03-06 00:05:16,430 - INFO - Starting main program logic.
+2025-03-06 00:05:16,431 - INFO - Path: /home/jku/git/jksfoTemp/python3/wget2
+2025-03-06 00:05:16,431 - INFO - File Name: getRequest.2.py
+2025-03-06 00:05:16,431 - INFO - Log Name: /logs/getRequest.2.log
+2025-03-06 00:05:16,431 - INFO - URL: https://www.google.com
+2025-03-06 00:05:16,432 - INFO - Output File: www.google.com.html
+2025-03-06 00:05:16,432 - INFO - Verbose: True
+2025-03-06 00:05:16,432 - INFO - Begin setInputValues
+2025-03-06 00:08:45,218 - INFO - End setInputValues - Finally
+2025-03-06 00:08:56,997 - INFO - Valid URL
+2025-03-06 00:09:07,675 - INFO - Enter getURLObj
+2025-03-06 00:09:07,808 - INFO - Got it: 200 {<Response [200]>}
+2025-03-06 00:09:07,808 - INFO - Exit getURLObj
+2025-03-06 00:11:47,589 - INFO - mylogger created.
+2025-03-06 00:11:47,596 - INFO - Starting main program logic.
+2025-03-06 00:11:47,597 - INFO - Path: /home/jku/git/jksfoTemp/python3/wget2
+2025-03-06 00:11:47,597 - INFO - File Name: getRequest.2.py
+2025-03-06 00:11:47,598 - INFO - Log Name: /logs/getRequest.2.log
+2025-03-06 00:11:47,598 - INFO - URL: https://www.google.com
+2025-03-06 00:11:47,598 - INFO - Output File: www.google.com.html
+2025-03-06 00:11:47,598 - INFO - Verbose: True
+2025-03-06 00:11:47,598 - INFO - Begin setInputValues
+2025-03-06 00:11:50,947 - INFO - End setInputValues - Finally
+2025-03-06 00:11:50,949 - INFO - Valid URL
+2025-03-06 00:11:50,950 - INFO - Enter getURLObj
+2025-03-06 00:11:51,073 - INFO - Got it: 200 {<Response [200]>}
+2025-03-06 00:11:51,074 - INFO - Exit getURLObj
+2025-03-06 00:11:53,346 - INFO - File to write: /home/jku/git/jksfoTemp/python3/wget2-/www.postjobfree.com-jobs?q=%22part+time%22.html
+2025-03-06 00:12:23,150 - INFO - Enter writeObj - this is the output file name: /home/jku/git/jksfoTemp/python3/wget2-/www.postjobfree.com-jobs?q=%22part+time%22.html
+2025-03-06 00:12:24,467 - ERROR - An error occurred writing the file: [Errno 2] No such file or directory: '/home/jku/git/jksfoTemp/python3/wget2-/www.postjobfree.com-jobs?q=%22part+time%22.html'
+2025-03-06 00:12:24,467 - INFO - Exit writeObj
+2025-03-06 00:12:24,468 - INFO - Main program logic finished.
+2025-03-06 00:15:39,008 - INFO - mylogger created.
+2025-03-06 00:15:39,012 - INFO - Starting main program logic.
+2025-03-06 00:15:39,013 - INFO - Path: /home/jku/git/jksfoTemp/python3/wget2
+2025-03-06 00:15:39,013 - INFO - File Name: getRequest.2.py
+2025-03-06 00:15:39,013 - INFO - Log Name: /logs/getRequest.2.log
+2025-03-06 00:15:39,013 - INFO - URL: https://www.google.com
+2025-03-06 00:15:39,013 - INFO - Output File: www.google.com.html
+2025-03-06 00:15:39,013 - INFO - Verbose: True
+2025-03-06 00:15:39,014 - INFO - Begin setInputValues
+2025-03-06 00:15:40,204 - INFO - End setInputValues - Finally
+2025-03-06 00:15:40,207 - INFO - Valid URL
+2025-03-06 00:15:40,208 - INFO - Enter getURLObj
+2025-03-06 00:15:40,362 - INFO - Got it: 200 {<Response [200]>}
+2025-03-06 00:15:40,363 - INFO - Exit getURLObj
+2025-03-06 00:15:41,226 - INFO - File to write: /home/jku/git/jksfoTemp/python3/wget2//www.postjobfree.com-jobs?q=%22part+time%22.html
+2025-03-06 00:15:50,044 - INFO - Enter writeObj - this is the output file name: /home/jku/git/jksfoTemp/python3/wget2//www.postjobfree.com-jobs?q=%22part+time%22.html
+2025-03-06 00:15:52,611 - INFO - exiting writeObj: /home/jku/git/jksfoTemp/python3/wget2//www.postjobfree.com-jobs?q=%22part+time%22.html - success
+2025-03-06 00:15:52,611 - INFO - Exit writeObj
+2025-03-06 00:15:52,612 - INFO - Main program logic finished.

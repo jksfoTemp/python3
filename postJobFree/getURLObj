@@ -1,0 +1,33 @@
+def getURLObj(urlT: str) -> requests.Response:
+    # def getURLObj(urlT: str):
+    """_summary_
+
+    Args:
+        urlT (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
+    code: int = -1
+    r: requests.Response = requests.Response()
+    try:
+        r = requests.get(urlT)
+        code = r.status_code
+        if code == 200:
+            print(f"Got it: {code}")
+            # return r.content
+            # return r
+        else:
+            print(
+                f"Error getting url: {urlT}  Response status code: \
+                  {code}"
+            )
+
+    except requests.RequestException as e:
+        # except Exception as e:
+        print(
+            f"Error getting url: {urlT};  Response status code: \
+            str({code})"
+        )
+    return r
+

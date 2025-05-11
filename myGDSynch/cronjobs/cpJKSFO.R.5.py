@@ -24,7 +24,7 @@ def filesAreSame(scrFile, destFile, info):
     if (info):
       print(f"File same: " + str(sameFile) + " | scrFile: " + scrFile + " | destFile: " + destFile)
 
-    return sameFile
+    return sameFile 
   except OSError as e:
     print(f"Error accessing files: {e}")
     logger.error(f"Error accessing files: {e}")

@@ -5773,3 +5773,324 @@ Begin: 00:31:12
 2025-05-11 00:31:15,178 INFO: 
 End: 00:31:15
 
+2025-05-11 00:52:23,931 INFO: 
+Begin: 00:52:23
+2025-05-11 00:52:23,939 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/
+2025-05-11 00:52:23,940 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf.bak
+2025-05-11 00:52:23,942 INFO: Copied /home/jk/Documents/WorkTEST/PhysicalTherapyBalance.pdf to /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2025-05-11 00:52:23,942 INFO: Recursion: /home/jk/Documents/WorkTEST/HealthSummaries
+2025-05-11 00:52:23,943 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries
+2025-05-11 00:52:23,943 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt.bak
+2025-05-11 00:52:23,944 INFO: Copied /home/jk/Documents/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2025-05-11 00:52:23,944 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/testingAgain.bak
+2025-05-11 00:52:23,944 INFO: Copied /home/jk/Documents/WorkTEST/testingAgain to /home/jk/JKSFO.Resume/WorkTEST/testingAgain
+2025-05-11 00:52:23,945 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays
+2025-05-11 00:52:23,945 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2025-05-11 00:52:23,946 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png.bak
+2025-05-11 00:52:23,947 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2025-05-11 00:52:23,948 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 00:52:24,516 INFO: Dir created: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 00:52:26,798 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2025-05-11 00:52:29,426 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2025-05-11 00:52:29,557 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png.bak
+2025-05-11 00:52:29,558 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2025-05-11 00:52:29,558 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM.bak
+2025-05-11 00:52:29,559 INFO: Copied /home/jk/Documents/WorkTEST/testDocFromVM to /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM
+2025-05-11 00:52:29,559 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/testingPyScript.bak
+2025-05-11 00:52:29,559 INFO: Copied /home/jk/Documents/WorkTEST/testingPyScript to /home/jk/JKSFO.Resume/WorkTEST/testingPyScript
+2025-05-11 00:52:29,560 INFO: Recursion: /home/jk/Documents/WorkTEST/TBReports
+2025-05-11 00:52:29,560 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/TBReports
+2025-05-11 00:52:29,560 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt.bak
+2025-05-11 00:52:29,561 INFO: Copied /home/jk/Documents/WorkTEST/TBReports/TB_Results.txt to /home/jk/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2025-05-11 00:52:29,561 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf.bak
+2025-05-11 00:52:29,561 INFO: Copied /home/jk/Documents/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jk/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2025-05-11 00:52:29,562 INFO: 
+End: 00:52:29
+
+2025-05-11 02:02:20,005 INFO: 
+Begin: 02:02:20
+2025-05-11 02:02:20,013 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/
+2025-05-11 02:02:20,015 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf.bak
+2025-05-11 02:02:20,016 INFO: Copied /home/jk/Documents/WorkTEST/PhysicalTherapyBalance.pdf to /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2025-05-11 02:02:20,017 INFO: Recursion: /home/jk/Documents/WorkTEST/HealthSummaries
+2025-05-11 02:02:20,017 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries
+2025-05-11 02:02:20,203 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt.bak
+2025-05-11 02:02:20,204 INFO: Copied /home/jk/Documents/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2025-05-11 02:02:20,205 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/testingAgain.bak
+2025-05-11 02:02:20,209 INFO: Copied /home/jk/Documents/WorkTEST/testingAgain to /home/jk/JKSFO.Resume/WorkTEST/testingAgain
+2025-05-11 02:02:20,212 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays
+2025-05-11 02:02:20,215 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2025-05-11 02:02:20,216 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png.bak
+2025-05-11 02:02:20,217 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2025-05-11 02:02:20,218 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 02:02:20,219 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 02:02:20,220 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png.bak
+2025-05-11 02:02:20,222 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2025-05-11 02:02:20,225 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png.bak
+2025-05-11 02:02:20,226 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2025-05-11 02:02:20,227 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png.bak
+2025-05-11 02:02:20,228 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2025-05-11 02:02:20,228 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM.bak
+2025-05-11 02:02:20,229 INFO: Copied /home/jk/Documents/WorkTEST/testDocFromVM to /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM
+2025-05-11 02:02:20,233 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/testingPyScript.bak
+2025-05-11 02:02:20,235 INFO: Copied /home/jk/Documents/WorkTEST/testingPyScript to /home/jk/JKSFO.Resume/WorkTEST/testingPyScript
+2025-05-11 02:02:20,236 INFO: Recursion: /home/jk/Documents/WorkTEST/TBReports
+2025-05-11 02:02:20,237 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/TBReports
+2025-05-11 02:02:20,241 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt.bak
+2025-05-11 02:02:20,242 INFO: Copied /home/jk/Documents/WorkTEST/TBReports/TB_Results.txt to /home/jk/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2025-05-11 02:02:20,242 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf.bak
+2025-05-11 02:02:20,243 INFO: Copied /home/jk/Documents/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jk/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2025-05-11 02:02:20,243 INFO: 
+End: 02:02:20
+
+2025-05-11 02:08:39,482 INFO: 
+Begin: 02:08:39
+2025-05-11 02:08:39,484 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/
+2025-05-11 02:08:39,485 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf.bak
+2025-05-11 02:08:39,485 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 23, in filesAreSame
+    sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
+               ^^^^^^^
+NameError: name 'filecmp' is not defined. Did you forget to import 'filecmp'
+2025-05-11 02:08:41,496 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2025-05-11 02:08:41,496 INFO: Copied /home/jk/Documents/WorkTEST/PhysicalTherapyBalance.pdf to /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2025-05-11 02:08:41,496 INFO: Recursion: /home/jk/Documents/WorkTEST/HealthSummaries
+2025-05-11 02:08:41,498 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries
+2025-05-11 02:08:41,720 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt.bak
+2025-05-11 02:08:41,720 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 23, in filesAreSame
+    sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
+               ^^^^^^^
+NameError: name 'filecmp' is not defined. Did you forget to import 'filecmp'
+2025-05-11 02:08:44,266 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2025-05-11 02:08:44,267 INFO: Copied /home/jk/Documents/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2025-05-11 02:08:44,267 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/testingAgain.bak
+2025-05-11 02:08:44,268 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 23, in filesAreSame
+    sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
+               ^^^^^^^
+NameError: name 'filecmp' is not defined. Did you forget to import 'filecmp'
+2025-05-11 02:08:45,920 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/testingAgain
+2025-05-11 02:08:45,921 INFO: Copied /home/jk/Documents/WorkTEST/testingAgain to /home/jk/JKSFO.Resume/WorkTEST/testingAgain
+2025-05-11 02:08:45,922 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays
+2025-05-11 02:08:45,922 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2025-05-11 02:08:46,101 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png.bak
+2025-05-11 02:08:46,101 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 23, in filesAreSame
+    sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
+               ^^^^^^^
+NameError: name 'filecmp' is not defined. Did you forget to import 'filecmp'
+2025-05-11 02:08:48,562 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2025-05-11 02:08:48,562 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2025-05-11 02:08:48,563 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 02:08:48,563 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 02:08:48,696 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png.bak
+2025-05-11 02:08:48,696 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 23, in filesAreSame
+    sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
+               ^^^^^^^
+NameError: name 'filecmp' is not defined. Did you forget to import 'filecmp'
+2025-05-11 02:08:51,217 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2025-05-11 02:08:51,218 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2025-05-11 02:08:51,219 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png.bak
+2025-05-11 02:08:51,250 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 23, in filesAreSame
+    sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
+               ^^^^^^^
+NameError: name 'filecmp' is not defined. Did you forget to import 'filecmp'
+2025-05-11 02:08:53,474 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2025-05-11 02:08:53,475 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2025-05-11 02:08:53,477 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png.bak
+2025-05-11 02:08:53,478 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 23, in filesAreSame
+    sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
+               ^^^^^^^
+NameError: name 'filecmp' is not defined. Did you forget to import 'filecmp'
+2025-05-11 02:08:55,760 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2025-05-11 02:08:55,760 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2025-05-11 02:08:55,761 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM.bak
+2025-05-11 02:08:55,762 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 23, in filesAreSame
+    sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
+               ^^^^^^^
+NameError: name 'filecmp' is not defined. Did you forget to import 'filecmp'
+2025-05-11 02:08:57,255 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM
+2025-05-11 02:08:57,255 INFO: Copied /home/jk/Documents/WorkTEST/testDocFromVM to /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM
+2025-05-11 02:08:57,256 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/testingPyScript.bak
+2025-05-11 02:08:57,256 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 23, in filesAreSame
+    sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
+               ^^^^^^^
+NameError: name 'filecmp' is not defined. Did you forget to import 'filecmp'
+2025-05-11 02:10:46,566 INFO: 
+Begin: 02:10:45
+2025-05-11 02:10:59,122 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/
+2025-05-11 02:11:25,990 INFO: File exists, creating backup: /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf.bak
+2025-05-11 02:12:14,640 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:14:12,612 INFO: 
+Begin: 02:14:10
+2025-05-11 02:14:28,485 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/
+2025-05-11 02:14:53,942 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:16:40,221 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2025-05-11 02:16:40,222 INFO: Copied /home/jk/Documents/WorkTEST/PhysicalTherapyBalance.pdf to /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2025-05-11 02:16:40,223 INFO: Recursion: /home/jk/Documents/WorkTEST/HealthSummaries
+2025-05-11 02:16:40,423 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries
+2025-05-11 02:16:40,730 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:16:43,533 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2025-05-11 02:16:43,533 INFO: Copied /home/jk/Documents/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2025-05-11 02:16:43,991 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:16:45,749 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/testingAgain
+2025-05-11 02:16:45,749 INFO: Copied /home/jk/Documents/WorkTEST/testingAgain to /home/jk/JKSFO.Resume/WorkTEST/testingAgain
+2025-05-11 02:16:45,750 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays
+2025-05-11 02:16:45,751 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2025-05-11 02:16:46,503 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:16:48,902 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2025-05-11 02:16:48,902 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2025-05-11 02:16:48,903 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 02:16:48,903 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 02:16:49,666 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:16:52,185 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2025-05-11 02:16:52,186 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2025-05-11 02:16:52,827 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:16:55,152 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2025-05-11 02:16:55,153 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2025-05-11 02:16:55,548 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:16:57,699 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2025-05-11 02:16:57,699 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2025-05-11 02:16:58,235 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:17:00,156 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM
+2025-05-11 02:17:00,157 INFO: Copied /home/jk/Documents/WorkTEST/testDocFromVM to /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM
+2025-05-11 02:17:00,638 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:17:03,543 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/testingPyScript
+2025-05-11 02:17:03,544 INFO: Copied /home/jk/Documents/WorkTEST/testingPyScript to /home/jk/JKSFO.Resume/WorkTEST/testingPyScript
+2025-05-11 02:17:03,544 INFO: Recursion: /home/jk/Documents/WorkTEST/TBReports
+2025-05-11 02:17:03,545 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/TBReports
+2025-05-11 02:17:04,465 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:17:06,052 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2025-05-11 02:17:06,053 INFO: Copied /home/jk/Documents/WorkTEST/TBReports/TB_Results.txt to /home/jk/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2025-05-11 02:17:06,055 ERROR: Unexpected error:
+Traceback (most recent call last):
+  File "/home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py", line 25, in filesAreSame
+    print(f"File same: " + sameFile + " | scrFile: " + scrFile + " | destFile: " + destFile)
+          ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str
+2025-05-11 02:17:07,947 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2025-05-11 02:17:07,948 INFO: Copied /home/jk/Documents/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jk/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2025-05-11 02:17:07,948 INFO: 
+End: 02:17:07
+
+2025-05-11 02:19:21,148 INFO: 
+Begin: 02:19:21
+2025-05-11 02:19:21,306 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/
+2025-05-11 02:19:22,003 INFO: Copied /home/jk/Documents/WorkTEST/PhysicalTherapyBalance.pdf to /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2025-05-11 02:19:22,003 INFO: Recursion: /home/jk/Documents/WorkTEST/HealthSummaries
+2025-05-11 02:19:22,004 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries
+2025-05-11 02:19:22,205 INFO: Copied /home/jk/Documents/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2025-05-11 02:19:22,719 INFO: Copied /home/jk/Documents/WorkTEST/testingAgain to /home/jk/JKSFO.Resume/WorkTEST/testingAgain
+2025-05-11 02:19:22,719 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays
+2025-05-11 02:19:22,720 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2025-05-11 02:19:23,371 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2025-05-11 02:19:23,372 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 02:19:23,372 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 02:19:24,055 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2025-05-11 02:19:24,536 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2025-05-11 02:19:25,107 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2025-05-11 02:19:25,794 INFO: Copied /home/jk/Documents/WorkTEST/testDocFromVM to /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM
+2025-05-11 02:19:26,386 INFO: Copied /home/jk/Documents/WorkTEST/testingPyScript to /home/jk/JKSFO.Resume/WorkTEST/testingPyScript
+2025-05-11 02:19:26,386 INFO: Recursion: /home/jk/Documents/WorkTEST/TBReports
+2025-05-11 02:19:26,386 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/TBReports
+2025-05-11 02:19:26,919 INFO: Copied /home/jk/Documents/WorkTEST/TBReports/TB_Results.txt to /home/jk/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2025-05-11 02:19:26,920 INFO: Copied /home/jk/Documents/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jk/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2025-05-11 02:19:26,921 INFO: 
+End: 02:19:26
+
+2025-05-11 02:20:41,974 INFO: 
+Begin: 02:20:41
+2025-05-11 02:20:41,978 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/
+2025-05-11 02:20:42,475 INFO: Copied /home/jk/Documents/WorkTEST/PhysicalTherapyBalance.pdf to /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf
+2025-05-11 02:20:42,475 INFO: Recursion: /home/jk/Documents/WorkTEST/HealthSummaries
+2025-05-11 02:20:42,476 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries
+2025-05-11 02:20:42,476 INFO: Copied /home/jk/Documents/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt to /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt
+2025-05-11 02:20:42,845 INFO: Copied /home/jk/Documents/WorkTEST/testingAgain to /home/jk/JKSFO.Resume/WorkTEST/testingAgain
+2025-05-11 02:20:42,847 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays
+2025-05-11 02:20:42,850 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2025-05-11 02:20:43,942 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png
+2025-05-11 02:20:43,942 INFO: Recursion: /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 02:20:43,943 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 02:20:44,725 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png
+2025-05-11 02:20:45,676 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png
+2025-05-11 02:20:46,261 INFO: Copied /home/jk/Documents/WorkTEST/KneeLeftXrays/Description.png to /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png
+2025-05-11 02:20:46,533 INFO: Copied /home/jk/Documents/WorkTEST/testDocFromVM to /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM
+2025-05-11 02:20:46,805 INFO: Copied /home/jk/Documents/WorkTEST/testingPyScript to /home/jk/JKSFO.Resume/WorkTEST/testingPyScript
+2025-05-11 02:20:46,805 INFO: Recursion: /home/jk/Documents/WorkTEST/TBReports
+2025-05-11 02:20:46,805 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/TBReports
+2025-05-11 02:20:48,371 INFO: File backed up and copied /home/jk/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2025-05-11 02:20:48,371 INFO: Copied /home/jk/Documents/WorkTEST/TBReports/TB_Results.txt to /home/jk/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt
+2025-05-11 02:20:48,371 INFO: Copied /home/jk/Documents/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf to /home/jk/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf
+2025-05-11 02:20:48,374 INFO: 
+End: 02:20:48
+

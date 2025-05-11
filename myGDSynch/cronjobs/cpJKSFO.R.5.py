@@ -1,67 +1,51 @@
 """
-
 Saturday, May 10th, 2025 
-
 Source: cpJKSFO.R.4.py 
-
 Updating old files copied to new drive, synching everything 
+For new file set exec permissions: cd ~/dev-git/jksfoTemp/python3/myGDSynch/cronjobs$   # chmod +x cpJKSFO.R.5.py
 
-SourceTest: /home/jk/Documents/WorkTest/
-DestTest: /home/jk/JKSFO.Resume/WorkTest/  
-
-Source: /home/jk/Documents/Work/
-Dest: /home/jk/JKSFO.Resume/Work/  
-
-cd ~/dev-git/jksfoTemp/python3/myGDSynch/cronjobs$ 
-# chmod +x cpJKSFO.R.5.py
-
-# Testing
-# /usr/bin/python3 
-#   /home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py ~/home/jk/Documents/WorkTEST/ ~/home/jk/JKSFO.Resume/WorkTest/
-  
-# Deploy to cronjob
-# /usr/bin/python3 
-#   /home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py ~/home/jk/Documents/Work/ ~/home/jk/JKSFO.Resume/Work/
-  
-Old notes: 
-  Fight this another day. There is some kind of issue copying over the files to 
-  the RClone stage, was working earlier. It should do some kind of diff on date 
-  anyway and not recopy the file every iteration; I may have exceeded some data 
-  threshold with GDrive. I should also look into how to disable the RClone synch
-  but as I am on a time schedule I didn't want have to reconfig rclone as well (
-  but there are directions as for how to do that in Keep). 
-
+TODO:   
+  Add comments, refactor for simplicity
+  Implement date/time testing to prevent excessive copying
   Still need to set up the cronjob but get it right first. 
-  
 """
 
 import shutil
 import os
 import sys
+import filecmp
 import datetime
 import logging
 
+
+def filesAreSame(scrFile, destFile, info):
+  try:
+    sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
+    if (info):
+      print(f"File same: " + str(sameFile) + " | scrFile: " + scrFile + " | destFile: " + destFile)
+
+    return sameFile
+  except OSError as e:
+    print(f"Error accessing files: {e}")
+    logger.error(f"Error accessing files: {e}")
+  except Exception as e:
+    print(f"Unexpected error: {e}")
+    logger.exception("Unexpected error:")
+
 def copy_dir(src, dest, verbose):
   """Copies the contents of the source directory to the destination directory, overwriting existing files.
-  Args:
-    src: The source directory path.
-    dest: The destination directory path.
-  Usage:
-    test:
-      /usr/bin/python3 /home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py ~/home/jk/Documents/WorkTEST/ ~/home/jk/JKSFO.Resume/WorkTEST/ 1
-    release:
-      # /usr/bin/python3 /home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py ~/home/jk/Documents/Work/ ~/home/jk/JKSFO.Resume/Work/ 0
-  cronjob:
-    test:
-      10 * * * * <cmd> 1
-    release:
-      10 * * * * <cmd> 0
-
-  I think where I left off I was going to implement an array diff type of tool 
-  that did name, size and date diffs to determine if it would actually be copied 
-  over, save I/O and bandwidth 
-
-  """
+    sysArgs:
+      exec: The exe. /home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py
+      src: The source directory path. ~/home/jk/Documents/WorkTEST/
+      dest: The destination directory path.
+      verbose: 0 | 1 
+    Usage 
+      (test):
+        /usr/bin/python3 /home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py ~/home/jk/Documents/WorkTEST/ ~/home/jk/JKSFO.Resume/WorkTEST/ 1
+      (release/cronjob):
+        # /usr/bin/python3 /home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py ~/home/jk/Documents/Work/ ~/home/jk/JKSFO.Resume/Work/ 0
+        10 * * * * <cmd> 1
+`  """
   try:
     # Create the destination directory if it doesn't exist
     if not os.path.isdir(dest):
@@ -82,19 +66,19 @@ def copy_dir(src, dest, verbose):
           logger.info(f"Recursion: " + src_item)
         copy_dir(src_item, dest_item, verbose)
       else: # It is a file, get to work
+        # TODO: I think there is a logic error here but I am pretty tired right now ... 
         if os.path.exists(dest_item):
           backup_file = dest_item + ".bak"
-          if verbose == "1":
-            print(f"File exists, creating backup: " + backup_file)
-            logger.info(f"File exists, creating backup: " + backup_file)
           try:
-            if os.path.exists(backup_file):
-              os.remove(backup_file)
-              shutil.copy2(dest_item, backup_file)
+            # Test if files are same 
+            if not(filesAreSame(src_item, dest_item, verbose)):
+              if os.path.exists(backup_file):
+                os.remove(backup_file)
+                shutil.copy2(dest_item, backup_file)
               shutil.copy2(src_item, dest_item)
               if verbose == "1":
-                print(f"Created backup for {dest_item}")
-                logger.info(f"Created backup for {dest_item}")
+                print(f"File backed up and copied {dest_item}")
+                logger.info(f"File backed up and copied {dest_item}")
           except OSError as e:
             print(f"Error creating backup for {dest_item}: {e}")
             logger.info(f"Error creating backup for {dest_item}: {e}")

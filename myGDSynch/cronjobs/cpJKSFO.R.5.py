@@ -67,36 +67,34 @@ def copy_dir(src, dest, verbose):
         copy_dir(src_item, dest_item, verbose)
       else: # It is a file, get to work
         # TODO: I think there is a logic error here but I am pretty tired right now ... 
-        if os.path.exists(dest_item):
-          backup_file = dest_item + ".bak"
-          try:
-            # Test if files are same 
-            if not(filesAreSame(src_item, dest_item, verbose)):
-              if os.path.exists(backup_file):
-                os.remove(backup_file)
-                shutil.copy2(dest_item, backup_file)
-              shutil.copy2(src_item, dest_item)
-              if verbose == "1":
-                print(f"File backed up and copied {dest_item}")
-                logger.info(f"File backed up and copied {dest_item}")
-          except OSError as e:
-            print(f"Error creating backup for {dest_item}: {e}")
-            logger.info(f"Error creating backup for {dest_item}: {e}")
-          except Exception as e:
-            print(f"Unexpected error: {e}")
-            logger.exception("Unexpected error:")
-        else: 
-          try:
+        # if os.path.exists(dest_item):
+        backup_file = dest_item + ".bak"
+        try:
+          # If files are NOT the same 
+          if not(filesAreSame(src_item, dest_item, verbose)):
+            # Remove any existing backup file and create a new one 
+            if os.path.exists(backup_file):
+              os.remove(backup_file)
+              shutil.copy2(dest_item, backup_file)
+            # Copy over the file 
             shutil.copy2(src_item, dest_item)
-          except OSError as e:
-            print(f"Error creating backup for {dest_item}: {e}")
-            logger.info(f"Error creating backup for {dest_item}: {e}")
-          except Exception as e:
-            print(f"Unexpected error: {e}")
-            logger.exception("Unexpected error:")
-        if verbose == "1":
-          print(f"Copied {src_item} to {dest_item}")
-          logger.info(f"Copied {src_item} to {dest_item}")
+            if verbose == "1":
+              print(f"File backed up and copied {dest_item}")
+              logger.info(f"File backed up and copied {dest_item}")
+        except OSError as e:
+          print(f"Error creating backup for {dest_item}: {e}")
+          logger.info(f"Error creating backup for {dest_item}: {e}")
+        except Exception as e:
+          print(f"Unexpected error: {e}")
+          logger.exception("Unexpected error:")
+        else: 
+          # If files are the same 
+          if verbose == "1":
+            print(f"Nothing to do for {dest_item} ")
+          logger.info(f"Nothing to do  {dest_item} ")
+        # if verbose == "1":
+        #  print(f"Copied {src_item} to {dest_item}")
+        #  logger.info(f"Copied {src_item} to {dest_item}")
   except OSError as e:
     print(f"Error copying files: {e}")
     logger.error(f"Error copying files: {e}")

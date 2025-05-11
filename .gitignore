@@ -45,3 +45,6 @@
 ./wget2/trash/
 ./wget2/logs/
 
+myGDSynch/cronjobs/WorkDirBAKs.log
+beautifulSoup/03-12/send2trash
+.gitignore

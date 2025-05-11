@@ -126,3 +126,24 @@ Begin: 02:40:10
 2025-05-11 02:40:58,575 INFO: 
 End: 02:40:58
 
+2025-05-11 03:51:45,465 INFO: 
+Begin: 03:51:45
+2025-05-11 03:51:45,479 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/
+2025-05-11 03:51:46,433 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/PhysicalTherapyBalance.pdf 
+2025-05-11 03:51:46,434 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries
+2025-05-11 03:51:46,578 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/HealthSummaries/mhv_KELLY_20240522_1433.txt 
+2025-05-11 03:51:47,165 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/testingAgain 
+2025-05-11 03:51:47,165 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays
+2025-05-11 03:51:47,814 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description2.png 
+2025-05-11 03:51:47,814 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped
+2025-05-11 03:51:48,536 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Description2.png 
+2025-05-11 03:51:49,023 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/V2Cropped/Knee AP (DX) 30Pct 2.png 
+2025-05-11 03:51:50,065 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/KneeLeftXrays/Description.png 
+2025-05-11 03:51:50,435 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/testDocFromVM 
+2025-05-11 03:51:50,713 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/testingPyScript 
+2025-05-11 03:51:50,713 INFO: Dir exists: /home/jk/JKSFO.Resume/WorkTEST/TBReports
+2025-05-11 03:51:51,563 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/TBReports/TB_Results.txt 
+2025-05-11 03:51:51,563 INFO: Nothing to do  /home/jk/JKSFO.Resume/WorkTEST/TBReports/MHV-TB-RAD-50-2024.pdf 
+2025-05-11 03:51:51,564 INFO: 
+End: 03:51:51
+

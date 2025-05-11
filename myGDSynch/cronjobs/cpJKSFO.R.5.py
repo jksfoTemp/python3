@@ -1,13 +1,9 @@
 """
 Saturday, May 10th, 2025 
 Source: cpJKSFO.R.4.py 
-Updating old files copied to new drive, synching everything 
 For new file set exec permissions: cd ~/dev-git/jksfoTemp/python3/myGDSynch/cronjobs$   # chmod +x cpJKSFO.R.5.py
 
-TODO:   
-  Add comments, refactor for simplicity
-  Implement date/time testing to prevent excessive copying
-  Still need to set up the cronjob but get it right first. 
+TODO:  Need to implement with cronjob 
 """
 
 import shutil
@@ -17,13 +13,11 @@ import filecmp
 import datetime
 import logging
 
-
 def filesAreSame(scrFile, destFile, info):
   try:
     sameFile = filecmp.cmp(scrFile, destFile, shallow=True)
     if (info):
       print(f"File same: " + str(sameFile) + " | scrFile: " + scrFile + " | destFile: " + destFile)
-
     return sameFile 
   except OSError as e:
     print(f"Error accessing files: {e}")
@@ -32,7 +26,7 @@ def filesAreSame(scrFile, destFile, info):
     print(f"Unexpected error: {e}")
     logger.exception("Unexpected error:")
 
-def copy_dir(src, dest, verbose):
+def copyDir(src, dest, verbose):
   """Copies the contents of the source directory to the destination directory, overwriting existing files.
     sysArgs:
       exec: The exe. /home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py
@@ -64,10 +58,8 @@ def copy_dir(src, dest, verbose):
         if verbose == "1":
           print(f"Recursion: " + src_item)
           logger.info(f"Recursion: " + src_item)
-        copy_dir(src_item, dest_item, verbose)
+        copyDir(src_item, dest_item, verbose)
       else: # It is a file, get to work
-        # TODO: I think there is a logic error here but I am pretty tired right now ... 
-        # if os.path.exists(dest_item):
         backup_file = dest_item + ".bak"
         try:
           # If files are NOT the same 
@@ -92,9 +84,6 @@ def copy_dir(src, dest, verbose):
           if verbose == "1":
             print(f"Nothing to do for {dest_item} ")
           logger.info(f"Nothing to do  {dest_item} ")
-        # if verbose == "1":
-        #  print(f"Copied {src_item} to {dest_item}")
-        #  logger.info(f"Copied {src_item} to {dest_item}")
   except OSError as e:
     print(f"Error copying files: {e}")
     logger.error(f"Error copying files: {e}")
@@ -102,6 +91,15 @@ def copy_dir(src, dest, verbose):
     print(f"Unexpected error: {e}")
     logger.exception("Unexpected error:")
 
+def string2Bool(input_str):
+    lower_str = input_str.lower()
+    if lower_str in ['true', 't', 'yes', 'y', '1']:
+        return True
+    elif lower_str in ['false', 'f', 'no', 'n', '0']:
+        return False
+    else:
+        raise ValueError(f"Invalid boolean string: '{input_str}'")
+      
 if __name__ == "__main__":
   logger = logging.getLogger(__name__)
 
@@ -121,14 +119,24 @@ if __name__ == "__main__":
 
   src_dir = sys.argv[1]
   dest_dir = sys.argv[2]
-  verboseYN = sys.argv[3]
+  verbose_YN = sys.argv[3]
+  verboseYN: bool = False
+  try: 
+    assert os.path.isdir(src_dir), "First argument is not a directory"
+    assert os.path.isdir(dest_dir), "Second argument is not a directory"
+    assert string2Bool (verbose_YN), "Third argument must be true/false or 1/0"
+    verboseYN = bool(verbose_YN)
+      
+    now = datetime.datetime.now()
+    print(now.strftime("\nBegin: %H:%M:%S"))
+    logger.info(now.strftime("\nBegin: %H:%M:%S"))
 
-  now = datetime.datetime.now()
-  print(now.strftime("\nBegin: %H:%M:%S"))
-  logger.info(now.strftime("\nBegin: %H:%M:%S"))
+    copyDir(src_dir, dest_dir, verboseYN)
+  
+    now = datetime.datetime.now()
+    print(now.strftime("End: %H:%M:%S" + "\n"))
+    logger.info(now.strftime("\nEnd: %H:%M:%S" + "\n"))
 
-  copy_dir(src_dir, dest_dir, verboseYN)
-
-  now = datetime.datetime.now()
-  print(now.strftime("End: %H:%M:%S" + "\n"))
-  logger.info(now.strftime("\nEnd: %H:%M:%S" + "\n"))
+  except AssertionError as e:  
+    print(e)
+    logger.info(e)

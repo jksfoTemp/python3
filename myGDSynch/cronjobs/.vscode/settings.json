@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
     "reconfig"
-  ]
+  ],
+  "python.analysis.typeCheckingMode": "standard"
 }

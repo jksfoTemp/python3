@@ -1,0 +1,96 @@
+
+How to debug, with vscode (hosted on linux), a python module (file) (that
+parses) that takes command line arguments ... should have been simple.
+
+After hours spent with (AI's, articles, docs and youtube) ...
+
+TLDR: [ctrl] [shift] [d]
+
+In launch.json (create one if it doesn't exist), add node (the second node here,
+in the same directory as the script/module) that defines the argument(s).
+
+For example:
+
+{
+  "version": "0.2.0",
+  "configurations": [
+            {
+              "type": "bashdb",
+              "request": "launch",
+              "name": "Bash-Debug (simplest configuration)",
+              "program": "${file}"
+            },
+    {
+      "name": "Python: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "args": [
+        "www.cnn.com"
+      ]
+    }
+  ]
+}
+
+(Save/close)
+
+Set a breakpoint in your code
+
+Enter [ctrl] [shift] [d]
+
+Look for the green triangle pointing right (in the top left for me)
+
+Hit the 'down arrow' and select the correct debugger ("Python Debugger: Current
+file with arguments")
+
+Hit 'play' (the green arrow)
+
+The palette box (top) will prompt you for the arguments; enter one at a time
+and hit enter after each
+
+Assuming your conde actually parses correctly (start with something simple), you
+should be able to ([f9][f10][f11]) through it like normal ([f5] to run it all).
+
+If something 'burps', close the IDE (vscode), reopen it and start again.
+
+
+
+
+
+
+
+In the palette box (top)
+
+
+
+
+
+https://www.postjobfree.com/jobs?q=%22part+time%22&l=San+Francisco%2C+CA&radius=2
+
+python3 ./wget2/getRequest.2.py "cnn.com"
+
+python3 -m pdb ./wget2/getRequest.2.py "cnn.com"
+
+$ python3 -m pdb app.py arg1 arg2
+
+
+Alternatively, if you are using Visual Studio Code (VS Code), you can configure your launch settings in the launch.json file to include command line arguments. For instance, you can set "args": ["arg1", "arg2"] in your launch configuration to pass arguments to your script when debugging.
+
+vscode launch.json file syntax for including two command line arguments?
+
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  //    "args": ["Maltese", "5"]
+  //   "args": ["www.google.com"]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "bashdb",
+      "request": "launch",
+      "name": "Bash-Debug (simplest configuration)",
+      "program": "${file}"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+
+% US budget spending DOD
+% US budget spending VA
+% US Vets
+  By age group
+
+
+
+import logging
+import argparse
+
+def setup_logging(verbose):  # verbose now passed as an argument
+    level = logging.DEBUG if verbose else logging.INFO
+    # ... (rest of logging setup)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="My script")
+    parser.add_argument("-v", "--verbose", action="store_true", help="Increase output verbosity")
+    args = parser.parse_args()
+
+    setup_logging(args.verbose) # Pass the value to the setup function
+    # ... rest of your code
+
+if __name__ == "__main__":
+    setup_logging()
+    my_function()
+
+    # To enable verbose logging:
+    VERBOSE = True  # Change the global flag
+    setup_logging() # Re-initialize the logger
+    my_function()
+
+
+Move fn's
+  Logging to top
+  messaging
+  error routines
+
+
+TODO: Set up a decent formatter that actually works (unlike black)
+TODO: Implement logging
+TODO: Last statement is the filename (on success)
+TODO: Check for output consolidation
+TODO: Move screen output to single location
+TODO: Replace all print statement to messaging()
+TODO: I could change this to something like 'messaging' with an array of messages a \
+  failure code and an exit code to handle the error messaging and exit in one place
+
+
+
+
+
+import logging
+
+
+
+
+
+
+    Exception has occurred: ModuleNotFoundError
+    No module named 'requests'
+      File "/home/jku/git/jksfoTemp/python3/pySandbox/beautifulSoup/getRequest.0.py", line 18, in <module>
+        import requests
+    ModuleNotFoundError: No module named 'requests'
+
+
+
+
+TODO: Implement variable typing
+    i.e.
+    i.e.
+    i.e.
+    def greet(name: str) -> str:
+    def greet(name: str) -> str:
+    i.e.
+    i.e.
+    def process(data: Any) -> None:
+    name: str = "Alice"
+    age: int = 30
+
+TODO: Implement logging
+
+TODO: Setup debugging
+
+

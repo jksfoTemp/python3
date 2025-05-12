@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="30;url=http://127.0.0.1:81">
+    <title>Hello, Flask</title>
+    <style>
+      body {background-color:#000000; background-repeat:no-repeat; background-position:top-left;}
+      h1 {text-align:center; font-family:Arial; color:#ffffff; background-color:#000000;}
+      p {text-align:center; font-family:Georgia; font-size:48px;}
+    </style>
+  </head>
+  <body>
+    {%if name %} <strong>Hello there, {{ name }}!</strong> It's {{ date.strftime("%A, %d %B,
+    %Y at %X") }}. {% else %} What's your name? Provide it after /hello/ in the
+    URL. {% endif %}
+    <p>
+      <h2>http://localhost:5081/hello/foo</h2>
+      <h2>app-template.html</h2>
+    </p>
+  </body>
+</html>

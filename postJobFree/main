@@ -1,0 +1,48 @@
+# def main(url='https://en.wikipedia.org/wiki/foo',
+#  outputFile='sampleFile.html', verbose=False):
+def main(
+    url: str = "https://en.wikipedia.org/wiki/foo",
+    outputFile: str = "sampleFile.html",
+    verbose: bool = False,
+):
+    """_summary_
+
+    Args:
+        url (str, optional): _description_. Defaults to "https://en.wikipedia.org/wiki/foo".
+        outputFile (str, optional): _description_. Defaults to "sampleFile.html".
+        verbose (bool, optional): _description_. Defaults to False.
+    """
+    return_status: int = -1
+    try:
+        # Actually perform the input validation
+        isValid = validateInput(url, outputFile, verbose)
+
+        # Separate the messaging
+        if isValid != 0:
+            displayInputError(isValid, url, outputFile, verbose)
+            sys.exit()
+
+        # Should be good to go
+        obj: requests.Response = getURLObj(url)
+
+        if obj:  # Only write if content was successfully retrieved
+            writeObj(obj, outputFile)
+            # Success ...
+            print(
+                f"Should be good. \n \t URL: {url} \
+                \n\t File: {outputFile} \
+                \n\t Output: {verbose}"
+            )
+            return_status = 0
+            # dump the file name
+            # messaging(fname) for piping to next step
+        else:
+            print("Failed to retrieve content from URL.")
+            return_status = -1
+    except Exception as e:
+        print(f"An error occurred in main: {e}")
+        return_status = 1
+    finally:
+
+        # python my_script.py | grep "a"
+        sys.exit(return_status)

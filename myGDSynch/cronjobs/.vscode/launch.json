@@ -11,8 +11,8 @@
       "program": "${file}",
       "console": "integratedTerminal",
       "args": [
-        "~/MyHome/Pers/WorkTEST/",
-        "~/JKSFO.Resume/WorkTEST/",
+        "/home/jk/Documents/WorkTEST/", 
+        "/home/jk/JKSFO.Resume/WorkTEST/",
         "1"
       ]
     }

@@ -32,7 +32,7 @@ def copyDir(src, dest, verbose):
       exec: The exe. /home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py
       src: The source directory path. ~/home/jk/Documents/WorkTEST/
       dest: The destination directory path.
-      verbose: 0 | 1 
+      verbose: 0 | 1  fpp
     Usage 
       (test):
         /usr/bin/python3 /home/jk/dev-git/jksfoTemp/python3/myGDSynch/cronjobs/cpJKSFO.R.5.py ~/home/jk/Documents/WorkTEST/ ~/home/jk/JKSFO.Resume/WorkTEST/ 1
